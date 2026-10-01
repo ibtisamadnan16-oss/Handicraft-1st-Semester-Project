@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Venus Handicrafts</title>
+    <!-- Bootstrap CSS (Local with CDN Fallback) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google Fonts: Playfair Display, Poppins & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Main Theme Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER SECTION ==================== -->
+    <header class="top-header">
+        <div class="container">
+            <!-- Brand Logo & Title -->
+            <div class="brand-logo-container text-center">
+                <a href="index.html" class="brand-logo-link">
+                    <img src="images/logo.jpg" alt="Venus Handicrafts Logo" class="brand-logo-img">
+                    <h1 class="brand-title">Venus Handicrafts</h1>
+                    <span class="brand-subtitle">Crafting Timeless Decorative Handicrafts Since 1972</span>
+                </a>
+            </div>
+
+            <!-- Search Bar & Utility Icons -->
+            <div class="row align-items-center top-action-bar justify-content-between g-3">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <form id="siteSearchForm" class="search-container mx-auto mx-md-0" action="products.html" method="get">
+                        <div class="input-group search-input-group">
+                            <button type="submit" class="search-icon-btn" aria-label="Search">
+                                <img src="images/icons8-search-25 (1).png" alt="Search" class="search-icon-img">
+                            </button>
+                            <input type="text" id="siteSearchInput" name="q" class="form-control search-input" placeholder="Search handcrafted treasures..." aria-label="Search products">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-12 col-md-auto text-center text-md-end">
+                    <div class="quick-action-icons justify-content-center justify-content-md-end">
+                        <a href="contact.html" class="action-icon-link" title="My Account">
+                            <img src="images/icons8-account-24.png" alt="Account" class="action-icon-img">
+                        </a>
+                        <a href="products.html" class="action-icon-link action-wishlist" title="Wishlist">
+                            <img src="images/icons8-heart-25.png" alt="Wishlist" class="action-icon-img">
+                            <span class="action-badge">2</span>
+                        </a>
+                        <a href="contact.html" class="action-icon-link action-cart" title="Inquiry Basket">
+                            <img src="images/icons8-shop-25.png" alt="Cart" class="action-icon-img">
+                            <span class="action-badge">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Decorative Diamond Divider -->
+            <div class="hr-line-wrapper">
+                <div class="hr-line">
+                    <div class="diamond"></div>
+                    <div class="line"></div>
+                    <div class="diamond"></div>
+                </div>
+            </div>
+
+            <!-- Main Responsive Navbar -->
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <div class="container-fluid p-0">
+                    <button class="navbar-toggler w-100 py-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarNav" aria-controls="mainNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="d-flex align-items-center justify-content-center gap-2 text-midnight fw-bold">
+                            <span class="navbar-toggler-icon"></span> Navigation Menu
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNavbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item fw-bold border-bottom pb-2" href="products.html">All 10 Categories Overview</a></li>
+                                    <li><a class="dropdown-item" href="products.html#iron">Iron Handicrafts</a></li>
+                                    <li><a class="dropdown-item" href="products.html#glass">Glass Handicrafts</a></li>
+                                    <li><a class="dropdown-item" href="products.html#brass">Brass Handicrafts</a></li>
+                                    <li><a class="dropdown-item" href="products.html#wood">Wood Handicrafts</a></li>
+                                    <li><a class="dropdown-item" href="products.html#aluminium">Aluminium Handicrafts</a></li>
+                                    <li><a class="dropdown-item" href="products.html#decorative">Handicraft Decorative</a></li>
+                                    <li><a class="dropdown-item" href="products.html#tables">Table Wares</a></li>
+                                    <li><a class="dropdown-item" href="products.html#decor">Home Décor</a></li>
+                                    <li><a class="dropdown-item" href="products.html#candles">Candle Accessories</a></li>
+                                    <li><a class="dropdown-item" href="products.html#other">Other Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sitemap.html">Site Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="container my-5">
+        <!-- Title Banner -->
+        <div class="page-header-banner text-center mb-5">
+            <span class="badge px-3 py-2 text-uppercase mb-2" style="background-color: var(--text-midnight); color: var(--gold-accent); letter-spacing: 1px;">Reach Out To Us</span>
+            <h2 class="page-title mt-2">Contact Venus Handicrafts</h2>
+            <p class="page-lead mx-auto" style="max-width: 720px;">
+                Whether you have an inquiry about custom orders, wholesale export volumes, or artisan specifications, our team is always ready to assist you.
+            </p>
+        </div>
+
+        <!-- Success Alert (Hidden by default, shown on form submission) -->
+        <div id="contactSuccessAlert" class="alert alert-success alert-dismissible fade show d-none mb-4 p-4 shadow-sm" role="alert" style="border-left: 5px solid #198754; background-color: #d1e7dd;">
+            <div class="d-flex align-items-center gap-3">
+                <span class="fs-2">🎉</span>
+                <div>
+                    <h5 class="alert-heading fw-bold mb-1" style="color: #0f5132;">Thank You! Your Message Has Been Sent.</h5>
+                    <p class="mb-0 text-dark">Our export desk and customer care specialists will review your details and respond within 24 business hours.</p>
+                </div>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="row g-4 g-lg-5">
+            <!-- ==================== CONTACT FORM ==================== -->
+            <div class="col-12 col-lg-7">
+                <div class="contact-form-card">
+                    <h3 class="fw-bold mb-2" style="color: var(--text-midnight); font-family: var(--font-heading);">
+                        ✉️ Send Us a Message
+                    </h3>
+                    <p class="text-muted mb-4 small">
+                        Please complete the form below. All fields marked with an asterisk (<span class="text-danger">*</span>) are required.
+                    </p>
+
+                    <form id="contactForm">
+                        <!-- Full Name -->
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label fw-bold text-midnight">
+                                Full Name <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control contact-form-control" id="contactName" name="name" placeholder="e.g. John Doe" required>
+                        </div>
+
+                        <!-- Email Address & Phone Number -->
+                        <div class="row g-3 mb-3">
+                            <div class="col-12 col-md-6">
+                                <label for="contactEmail" class="form-label fw-bold text-midnight">
+                                    Email Address <span class="text-danger">*</span>
+                                </label>
+                                <input type="email" class="form-control contact-form-control" id="contactEmail" name="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="contactPhone" class="form-label fw-bold text-midnight">
+                                    Phone Number <span class="text-danger">*</span>
+                                </label>
+                                <input type="tel" class="form-control contact-form-control" id="contactPhone" name="phone" placeholder="e.g. +1 (123) 456-7890" required>
+                            </div>
+                        </div>
+
+                        <!-- Subject -->
+                        <div class="mb-3">
+                            <label for="contactSubject" class="form-label fw-bold text-midnight">
+                                Subject <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control contact-form-control" id="contactSubject" name="subject" placeholder="e.g. Bulk Wholesale Inquiry for Brass Handicrafts" required>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="mb-4">
+                            <label for="contactMessage" class="form-label fw-bold text-midnight">
+                                Message <span class="text-danger">*</span>
+                            </label>
+                            <textarea class="form-control contact-form-control" id="contactMessage" name="message" rows="5" placeholder="Please describe your requirements, product interest, required quantities, or customized design details..." required></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-handicraft-primary px-5 py-3 w-100 fw-bold fs-5 shadow-sm">
+                            Send Message ➔
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ==================== COMPANY INFORMATION ==================== -->
+            <div class="col-12 col-lg-5">
+                <div class="contact-info-card">
+                    <div>
+                        <h3 class="fw-bold mb-2" style="color: var(--text-midnight); font-family: var(--font-heading);">
+                            🏢 Company Information
+                        </h3>
+                        <p class="text-muted mb-4 small">
+                            Heritage manufacturing headquarters, display showroom &amp; global export desk.
+                        </p>
+
+                        <!-- Email -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">✉️</div>
+                            <div class="contact-info-content">
+                                <h5 class="text-midnight">Email</h5>
+                                <p><a href="mailto:ibtisamadnan16@gmail.com" class="fw-bold text-midnight text-decoration-underline">ibtisamadnan16@gmail.com</a></p>
+                                <small class="text-muted">Guaranteed reply within 24 business hours</small>
+                            </div>
+                        </div>
+
+                        <!-- Business Hours -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">🕒</div>
+                            <div class="contact-info-content">
+                                <h5 class="text-midnight">Business Hours</h5>
+                                <p><strong>Monday – Friday:</strong> 9:00 AM – 5:00 PM EST</p>
+                                <p class="text-muted small"><strong>Saturday &amp; Sunday:</strong> Closed (Artisan Foundry &amp; Kiln Operations)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trust Badge -->
+                    <div class="p-3 rounded-3 mt-3" style="background: rgba(255, 255, 255, 0.5); border: 1.5px dashed var(--text-midnight);">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <span class="fs-4">🌍</span>
+                            <strong class="text-midnight">Worldwide Shipping &amp; Container Logistics</strong>
+                        </div>
+                        <p class="mb-0 text-dark small">
+                            Exporting handcrafted brass, iron, glass, and wood decor safely to over 25+ countries since 1972.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== OPTIONAL: GOOGLE MAP ==================== -->
+        <section class="mt-5 pt-3">
+            <div class="text-center mb-4">
+                <span class="badge px-3 py-2 text-uppercase mb-1" style="background-color: var(--text-midnight); color: var(--gold-accent); letter-spacing: 1px;">Find Our Showroom</span>
+                <h3 class="fw-bold mt-2" style="font-family: var(--font-heading); color: var(--text-midnight);">
+                    📍 Our Location Map
+                </h3>
+                <p class="text-muted">Visit our display showroom by prior appointment to inspect physical finish and material samples.</p>
+            </div>
+
+            <div class="contact-map-wrapper">
+                <iframe 
+                    title="Venus Handicrafts Location Map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.016335123989!2d67.06734!3d24.86241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e9862828ff7%3A0x6b2b545d9d701e16!2sShahr-e-Faisal!5e0!3m2!1sen!2s!4v1680000000000!5m2!1sen!2s" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== COMMON FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5 class="footer-brand-title">Venus Handicrafts</h5>
+                    <p class="footer-description">
+                        Dedicated to preserving traditional artisanal craftsmanship since 1972. We curate, manufacture, and export handmade creations in iron, brass, wood, glass, and aluminium, bringing authentic beauty to homes and spaces worldwide.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-secondary p-2">Artisan Made</span>
+                        <span class="badge bg-secondary p-2">Authentic Heritage</span>
+                        <span class="badge bg-secondary p-2">100% Handmade</span>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-heading">Quick Links</h6>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                    </ul>
+                </div>
+
+                <!-- Product Categories -->
+                <div class="col-6 col-md-3 col-lg-3">
+                    <h6 class="footer-heading">Collections</h6>
+                    <ul class="footer-links-list">
+                        <li><a href="products.html#iron">Iron Handicrafts</a></li>
+                        <li><a href="products.html#brass">Brass Handicrafts</a></li>
+                        <li><a href="products.html#wood">Wood Handicrafts</a></li>
+                        <li><a href="products.html#glass">Glass Handicrafts</a></li>
+                        <li><a href="products.html#aluminium">Aluminium Handicrafts</a></li>
+                        <li><a href="products.html#decor">Home Décor &amp; Table Wares</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Location -->
+                <div class="col-12 col-md-12 col-lg-3">
+                    <h6 class="footer-heading">Contact &amp; Hours</h6>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <span><a href="mailto:ibtisamadnan16@gmail.com">ibtisamadnan16@gmail.com</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>🕒</span>
+                        <span>Monday - Friday: 9am - 5pm EST</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-bottom-divider">
+
+            <div class="footer-copyright">
+                <p class="mb-0">&copy; 1972 Venus Handicrafts. All rights reserved. Crafted with passion for heritage artistry.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS & Theme Interactions -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handicrafts Catalog & Product Details - Venus Handicrafts</title>
+    <!-- Bootstrap CSS (Local with CDN Fallback) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google Fonts: Playfair Display, Poppins & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Main Theme Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       SECTION 1: COMMON HEADER & MAIN NAVBAR
+       ========================================================================== -->
+    <header class="top-header">
+        <div class="container">
+            <!-- Brand Logo & Title -->
+            <div class="brand-logo-container text-center">
+                <a href="index.html" class="brand-logo-link">
+                    <img src="images/logo.jpg" alt="Venus Handicrafts Logo" class="brand-logo-img">
+                    <h1 class="brand-title">Venus Handicrafts</h1>
+                    <span class="brand-subtitle">Authentic Handmade Heritage & Artistry</span>
+                </a>
+            </div>
+
+            <!-- Search Bar & Utility Icons -->
+            <div class="row align-items-center top-action-bar justify-content-between g-3">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <form id="siteSearchForm" class="search-container mx-auto mx-md-0" action="products.html" method="get">
+                        <div class="input-group search-input-group">
+                            <button type="submit" class="search-icon-btn" aria-label="Search">
+                                <img src="images/icons8-search-25 (1).png" alt="Search" class="search-icon-img">
+                            </button>
+                            <input type="text" id="siteSearchInput" name="q" class="form-control search-input" placeholder="Search handcrafted treasures..." aria-label="Search products">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-12 col-md-auto text-center text-md-end">
+                    <div class="quick-action-icons justify-content-center justify-content-md-end">
+                        <a href="contact.html" class="action-icon-link" title="My Account">
+                            <img src="images/icons8-account-24.png" alt="Account" class="action-icon-img">
+                        </a>
+                        <a href="#" class="action-icon-link action-wishlist" title="Wishlist">
+                            <img src="images/icons8-heart-25.png" alt="Wishlist" class="action-icon-img">
+                            <span class="action-badge">2</span>
+                        </a>
+                        <a href="#" class="action-icon-link action-cart" title="Shopping Cart">
+                            <img src="images/icons8-shop-25.png" alt="Cart" class="action-icon-img">
+                            <span class="action-badge">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Decorative Diamond Divider -->
+            <div class="hr-line-wrapper">
+                <div class="hr-line">
+                    <div class="diamond"></div>
+                    <div class="line"></div>
+                    <div class="diamond"></div>
+                </div>
+            </div>
+
+            <!-- Main Responsive Navbar -->
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <div class="container-fluid p-0">
+                    <button class="navbar-toggler w-100 py-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarNav" aria-controls="mainNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="d-flex align-items-center justify-content-center gap-2 text-midnight fw-bold">
+                            <span class="navbar-toggler-icon"></span> Navigation Menu
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNavbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item fw-bold border-bottom pb-2" href="products.html">All Products Overview</a></li>
+                                    <li><a class="dropdown-item" href="#cat-iron">Iron Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="#cat-glass">Glass Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="#cat-brass">Brass Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="#cat-wood">Wood Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="#cat-aluminium">Aluminium Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="#cat-decorative">Decorative Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="#cat-tables">Table Wares</a></li>
+                                    <li><a class="dropdown-item" href="#cat-decor">Home Decor</a></li>
+                                    <li><a class="dropdown-item" href="#cat-candles">Candle Accessories</a></li>
+                                    <li><a class="dropdown-item" href="#cat-other">Other Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sitemap.html">Site Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+       MAIN CONTENT: PRODUCT CATEGORIES
+       ========================================================================== -->
+    <main class="container mb-5">
+        <!-- Page Title Banner -->
+        <div class="page-header-banner">
+            <h2 class="page-title">Handicraft Categories &amp; Catalog</h2>
+            <p class="page-lead">Click any product to view its complete artisanal specifications, materials, available designs, and decorative usage.</p>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="category-filter-nav">
+            <button type="button" class="cat-filter-btn active" data-filter="all">All Categories</button>
+            <button type="button" class="cat-filter-btn" data-filter="iron">Iron</button>
+            <button type="button" class="cat-filter-btn" data-filter="glass">Glass</button>
+            <button type="button" class="cat-filter-btn" data-filter="brass">Brass</button>
+            <button type="button" class="cat-filter-btn" data-filter="wood">Wood</button>
+            <button type="button" class="cat-filter-btn" data-filter="aluminium">Aluminium</button>
+            <button type="button" class="cat-filter-btn" data-filter="decorative">Decorative</button>
+            <button type="button" class="cat-filter-btn" data-filter="tables">Table Wares</button>
+            <button type="button" class="cat-filter-btn" data-filter="decor">Home Décor</button>
+            <button type="button" class="cat-filter-btn" data-filter="candles">Candle Accessories</button>
+            <button type="button" class="cat-filter-btn" data-filter="other">Other Products</button>
+        </div>
+
+        <!-- ==========================================================================
+           PRIMARY CATEGORY SHOWCASE CARDS (10 CATEGORIES)
+           ========================================================================== -->
+        <section class="mb-5">
+            <div class="row g-4 justify-content-center">
+
+                <!-- 1. Iron Handicrafts Card -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 category-card-item" data-category="iron">
+                    <div class="cat-showcase-card">
+                        <div class="cat-card-header">
+                            <h3 class="cat-card-title">Iron Handicrafts</h3>
+                        </div>
+                        <div class="cat-card-img-wrap">
+                            <img src="images/1-Iron Handicraft/iron handicraft-1.jpg" alt="Iron Handicrafts">
+                        </div>
+                        <div class="cat-card-body">
+                            <p class="cat-card-description">
+                                Premium handcrafted iron decorative items, antique watches, tribal figurines, and rustic garden fixtures.
+                            </p>
+                            <a href="#cat-iron" class="cat-btn-view">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Glass Handicrafts Card -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 category-card-item" data-category="glass">
+                    <div class="cat-showcase-card">
+                        <div class="cat-card-header">
+                            <h3 class="cat-card-title">Glass Handicrafts</h3>
+                        </div>
+                        <div class="cat-card-img-wrap">
+                            <img src="images/Glass-Handicraft.jpg" alt="Glass Handicrafts">
+                        </div>
+                        <div class="cat-card-body">
+                            <p class="cat-card-description">
+                                Artisan mouth-blown glassware, kaleidoscopic mosaic lamps, oil lanterns, and stained glass decor.
+                            </p>
+                            <a href="#cat-glass" class="cat-btn-view">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Brass Handicrafts Card -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 category-card-item" data-category="brass">
+                    <div class="cat-showcase-card">
+                        <div class="cat-card-header">
+                            <h3 class="cat-card-title">Brass Handicrafts</h3>
+                        </div>
+                        <div class="cat-card-img-wrap">
+                            <img src="images/3-Brass Handicraft/brass handicraft-2.jpg" alt="Brass Handicrafts">
+                        </div>
+                        <div class="cat-card-body">
+                            <p class="cat-card-description">
+                                Regal chiseled brass urns, ceremonial water taps, mini cannons, and golden lucky turtles.
+                            </p>
+                            <a href="#cat-brass" class="cat-btn-view">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Wood Handicrafts Card -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 category-card-item" data-category="wood">
+                    <div class="cat-showcase-card">
+                        <div class="cat-card-header">
+                            <h3 class="cat-card-title">Wood Handicrafts</h3>
+                        </div>
+                        <div class="cat-card-img-wrap">
+                            <img src="images/wood handicraft-2.jpg" alt="Wood Handicrafts">
+                        </div>
+                        <div class="cat-card-body">
+                            <p class="cat-card-description">
+                                Masterfully hand-carved rosewood baskets, walnut wardrobes, jewelry boxes, and traditional toys.
+                            </p>
+                            <a href="#cat-wood" class="cat-btn-view">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Aluminium Handicrafts Card -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 category-card-item" data-category="aluminium">
+                    <div class="cat-showcase-card">
+                        <div class="cat-card-header">
+                            <h3 class="cat-card-title">Aluminium Handicrafts</h3>
+                        </div>
+                        <div class="cat-card-img-wrap">
+                            <img src="images/aluminium handicraft-2.jpg" alt="Aluminium Handicrafts">
+                        </div>
+                        <div class="cat-card-body">
+                            <p class="cat-card-description">
+                                Sleek cast aluminium sculptures, durable hammered cookware, modern decorative vases, and platters.
+                            </p>
+                            <a href="#cat-aluminium" class="cat-btn-view">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Handicraft Decorative Card -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 category-card-item" data-category="decorative">
+                    <div class="cat-showcase-card">
+                        <div class="cat-card-header">
+                            <h3 class="cat-card-title">Handicraft Decorative</h3>
+                        </div>
+                        <div class="cat-card-img-wrap">
+                            <img src="images/handicraft decorative-1000.jpeg" alt="Handicraft Decorative">
+                        </div>
+                        <div class="cat-card-body">
+                            <p class="cat-card-description">
+                                Authentic glazed Blue Pottery ceramics, rustic floral plates, and ancestral wall medallions.
+                            </p>
+                            <a href="#cat-decorative" class="cat-btn-view">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Table Wares Card -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 category-card-item" data-category="tables">
+                    <div class="cat-showcase-card">
+                        <div class="cat-card-header">
+                            <h3 class="cat-card-title">Table Wares</h3>
+                        </div>
+                        <div class="cat-card-img-wrap">
+                            <img src="images/Table wares.jpg" alt="Table Wares">
+                        </div>
+                        <div class="cat-card-body">
+                            <p class="cat-card-description">
+                                Handcrafted artisan dining sets, etched serving trays, cutlery holders, and festive table decor.
+                            </p>
+                            <a href="#cat-tables" class="cat-btn-view">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Home Décor Card -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 category-card-item" data-category="decor">
+                    <div class="cat-showcase-card">
+                        <div class="cat-card-header">
+                            <h3 class="cat-card-title">Home Décor</h3>
+                        </div>
+                        <div class="cat-card-img-wrap">
+                            <img src="images/home decore-1.jpg" alt="Home Décor">
+                        </div>
+                        <div class="cat-card-body">
+                            <p class="cat-card-description">
+                                Warm, textured living room accents, handcrafted centerpiece bowls, and rustic aesthetic wall art.
+                            </p>
+                            <a href="#cat-decor" class="cat-btn-view">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Candle Accessories Card -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 category-card-item" data-category="candles">
+                    <div class="cat-showcase-card">
+                        <div class="cat-card-header">
+                            <h3 class="cat-card-title">Candle Accessories</h3>
+                        </div>
+                        <div class="cat-card-img-wrap">
+                            <img src="images/candle accessories-1.jpg" alt="Candle Accessories">
+                        </div>
+                        <div class="cat-card-body">
+                            <p class="cat-card-description">
+                                Intricately fashioned metal, wood, and glass candle stands casting enchanting atmospheric warmth.
+                            </p>
+                            <a href="#cat-candles" class="cat-btn-view">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Other Products Card -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 category-card-item" data-category="other">
+                    <div class="cat-showcase-card">
+                        <div class="cat-card-header">
+                            <h3 class="cat-card-title">Other Products</h3>
+                        </div>
+                        <div class="cat-card-img-wrap">
+                            <img src="images/Decorative-Handicraft.2.jpg" alt="Other Products">
+                        </div>
+                        <div class="cat-card-body">
+                            <p class="cat-card-description">
+                                Exclusive limited-edition artisan creations, cultural wedding instruments, and bespoke craft pieces.
+                            </p>
+                            <a href="#cat-other" class="cat-btn-view">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="hr-line-wrapper my-5">
+            <div class="hr-line">
+                <div class="diamond"></div>
+                <div class="line"></div>
+                <div class="diamond"></div>
+            </div>
+        </div>
+
+        <!-- ==========================================================================
+           DETAILED PRODUCTS WITH INTERACTIVE ATTRIBUTES
+           ========================================================================== -->
+
+        <!-- 1. Iron Detail Section -->
+        <section id="cat-iron" class="mb-5 pt-3">
+            <div class="category-detail-header">
+                <h3>Iron Handicrafts Collection</h3>
+                <span class="badge bg-dark px-3 py-2">Forged by Master Blacksmiths</span>
+            </div>
+            <div class="row g-4">
+                <!-- Product: Antique Watch -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/1-Iron Handicraft/iron handicraft-1.jpg" alt="Antique Watches">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Antique Iron Pocket Watch</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Wrought Iron &amp; Brass Alloy</div>
+                                <div><strong>Use:</strong> Study Desk &amp; Console Display</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Hand-hammered iron casing with vintage gear accents.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Antique Iron Pocket Watch"
+                                    data-category="Iron Handicrafts"
+                                    data-material="Wrought Iron &amp; Brass Gear Alloy"
+                                    data-desc="Hand-hammered iron casing with vintage gear accents, meticulously forged by master blacksmiths to preserve ancestral watchmaking aesthetics."
+                                    data-designs="Classic Roman Dial, Steampunk Gears, Minimalist Vintage"
+                                    data-usage="Desktop Ornament, Study Room Decor, Collector's Antique Showcase"
+                                    data-img="images/1-Iron Handicraft/iron handicraft-1.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product: Water Tap -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/iron handicraft-2.jpg" alt="Iron Water Tap">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Rustic Iron Water Tap</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Cast Wrought Iron</div>
+                                <div><strong>Use:</strong> Garden &amp; Patio Wall Accent</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Architectural vintage water tap fixture with weathered finish.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Rustic Iron Water Tap"
+                                    data-category="Iron Handicrafts"
+                                    data-material="Heavy Cast Wrought Iron with Weatherproof Coating"
+                                    data-desc="Architectural ornamental water faucet handcrafted with floral relief and antique textured patina for courtyards and terraces."
+                                    data-designs="Antique Floral Spout, Lion Head Relief, Rustic Minimalist"
+                                    data-usage="Garden Water Feature, Patio Wall Accent, Vintage Bathroom Fixture"
+                                    data-img="images/iron handicraft-2.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product: Tribal Figurines -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/iron handicraft-3-jpg.jpg" alt="Tribal Figurines">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Iron Tribal Figurines</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Forged Black Iron</div>
+                                <div><strong>Use:</strong> Living Room Console &amp; Bookshelf</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Indigenous artisan figures depicting cultural folk performers.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Iron Tribal Figurines"
+                                    data-category="Iron Handicrafts"
+                                    data-material="Hand-Welded Forged Black Iron"
+                                    data-desc="Indigenous artisan figures depicting cultural dancers and musicians with traditional instruments, hand-welded using age-old tribal folk techniques."
+                                    data-designs="Flute Player, Village Dancer, Folk Drummer"
+                                    data-usage="Bookshelf Accents, Living Room Console Decor, Cultural Gift"
+                                    data-img="images/iron handicraft-3-jpg.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Glass Detail Section -->
+        <section id="cat-glass" class="mb-5 pt-3">
+            <div class="category-detail-header">
+                <h3>Glass Handicrafts Collection</h3>
+                <span class="badge bg-dark px-3 py-2">Mouth-Blown &amp; Stained Glass</span>
+            </div>
+            <div class="row g-4">
+                <!-- Product: Stained Lamp -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/glass handicraft-4.jpg" alt="Mosaic Table Lamp">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Floral Radiance Glass Lamp</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Stained Glass &amp; Brass Base</div>
+                                <div><strong>Use:</strong> Ambient Nightstand &amp; Altar Lamp</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Geometric stained glass mosaic tesserae in antique brass pedestal.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Floral Radiance Glass Lamp"
+                                    data-category="Glass Handicrafts"
+                                    data-material="Hand-Cut Stained Glass &amp; Antiqued Brass Pedestal"
+                                    data-desc="Turkish mosaic-style lamp fitted with hand-pieced kaleidoscopic glass tesserae that cast magical warm reflections in dimly lit spaces."
+                                    data-designs="Amber Glow, Emerald Garden, Multicolored Mosaic"
+                                    data-usage="Bedside Ambient Lamp, Living Room Corner Lighting, Spiritual Altars"
+                                    data-img="images/glass handicraft-4.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product: Oil Lamp -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/glass handicraft-8.jpg" alt="Vintage Oil Lantern">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Heritage Glass Oil Lamp</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Borosilicate Glass &amp; Brass</div>
+                                <div><strong>Use:</strong> Ambient Dinner &amp; Heritage Altar</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Classic kerosene oil lantern with functional brass burner.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Heritage Glass Oil Lamp"
+                                    data-category="Glass Handicrafts"
+                                    data-material="Hand-Blown Borosilicate Glass &amp; Brass Burner"
+                                    data-desc="Classic functional kerosene oil lantern with decorative brass burner mechanism and ribbed glass reservoir."
+                                    data-designs="Clear Vintage Ribbed, Frosted Antique, Amber Tinted"
+                                    data-usage="Ambient Dinner Lighting, Patio Lantern, Heritage Display"
+                                    data-img="images/glass handicraft-8.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product: Chandelier -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/2-Glass Handicraft/glass handicraft-1.jpg" alt="Ottoman Stained Lamp">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Ottoman Glass Chandelier Light</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Stained Art Glass &amp; Bronze Filigree</div>
+                                <div><strong>Use:</strong> Foyer &amp; Dining Room Illumination</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Pendant lamp casting hypnotic kaleidoscopic reflections.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Ottoman Glass Chandelier Light"
+                                    data-category="Glass Handicrafts"
+                                    data-material="Stained Art Glass &amp; Antique Bronze Filigree Chain"
+                                    data-desc="Hanging pendant lamp casting warm hypnotic kaleidoscopic shadows across ceilings and hallways."
+                                    data-designs="Single Globe Pendant, 3-Tier Chandelier, Starburst Mosaic"
+                                    data-usage="Dining Area Chandelier, Hallway Accent Light, Foyer Illumination"
+                                    data-img="images/2-Glass Handicraft/glass handicraft-1.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Brass Detail Section -->
+        <section id="cat-brass" class="mb-5 pt-3">
+            <div class="category-detail-header">
+                <h3>Brass Handicrafts Collection</h3>
+                <span class="badge bg-dark px-3 py-2">Cast &amp; Hand-Engraved Solid Brass</span>
+            </div>
+            <div class="row g-4">
+                <!-- Product: Brass Urn -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/3-Brass Handicraft/brass handicraft-2.jpg" alt="Brass Artifact Urn">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Royal Brass Artifact Urn</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Solid Cast Brass</div>
+                                <div><strong>Use:</strong> Home Decoration &amp; Luxury Centerpiece</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">High-luster ornamental urn vase with hand-chiseled floral engraving.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Decorative Brass Vase / Urn"
+                                    data-category="Brass Handicrafts"
+                                    data-material="Solid Cast Brass"
+                                    data-desc="High-luster ornamental urn vase with hand-chiseled motifs dating back to royal court designs, polished to an enduring golden glow."
+                                    data-designs="Royal Peacock Etching, Traditional Paisley, Geometric Arabesque"
+                                    data-usage="Home Decoration, Luxury Centerpiece, Traditional Wedding Favor"
+                                    data-img="images/3-Brass Handicraft/brass handicraft-2.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product: Mini Cannon -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/brass handicraft-4.jpg" alt="Brass Mini Cannon">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Historical Brass Mini Cannon</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Pure Brass Antique Finish</div>
+                                <div><strong>Use:</strong> Executive Office Desk &amp; Bookshelf Display</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Historical desktop artillery replica with operable rotating wheels.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Historical Brass Mini Cannon"
+                                    data-category="Brass Handicrafts"
+                                    data-material="Pure Brass with Antique Finish"
+                                    data-desc="Meticulously detailed historical desktop artillery replica with hand-carved carriage and operable rotating wheels."
+                                    data-designs="Imperial Carriage, Battlefield Antique, Polished Golden"
+                                    data-usage="Executive Office Desk Display, Bookshelf Ornament, Collector's Souvenir"
+                                    data-img="images/brass handicraft-4.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product: Brass Turtle -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/brass handicraft-5.jpg" alt="Brass Turtle">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Feng Shui Brass Turtle</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Solid Polished Brass</div>
+                                <div><strong>Use:</strong> Wealth Corner &amp; Housewarming Mascot</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Sacred talisman of longevity and prosperity polished to a golden glow.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Feng Shui Golden Brass Turtle"
+                                    data-category="Brass Handicrafts"
+                                    data-material="Solid Polished Brass"
+                                    data-desc="Sacred talisman symbolizing longevity, wealth stability, and positive energy flow in traditional Vastu and Feng Shui principles."
+                                    data-designs="Traditional Shell Engraved, Dragon Turtle Variant, Mini Plate Pair"
+                                    data-usage="Living Room Wealth Corner, Office Table Mascot, Housewarming Gift"
+                                    data-img="images/brass handicraft-5.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Wood Detail Section -->
+        <section id="cat-wood" class="mb-5 pt-3">
+            <div class="category-detail-header">
+                <h3>Wood Handicrafts Collection</h3>
+                <span class="badge bg-dark px-3 py-2">Seasoned Rosewood &amp; Teak Carving</span>
+            </div>
+            <div class="row g-4">
+                <!-- Product: Basket -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/wood handicraft-2.jpg" alt="Wooden Basket">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Collapsible Rosewood Basket</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Seasoned Rosewood / Sheesham</div>
+                                <div><strong>Use:</strong> Fruit Serving &amp; Dining Centerpiece</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Collapsible fruit basket hand-cut with spiral geometry.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Collapsible Rosewood Basket"
+                                    data-category="Wood Handicrafts"
+                                    data-material="Seasoned Sheesham / Rosewood"
+                                    data-desc="Ingenious folding fruit and dry fruit basket hand-cut from a single piece of hardwood with spiral concentric geometry."
+                                    data-designs="Peacock Cutout, Spiral Oval, Round Leaf Pattern"
+                                    data-usage="Fruit Serving Bowl, Dining Table Centerpiece, Flat-Pack Travel Gift"
+                                    data-img="images/wood handicraft-2.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product: Wooden Toys -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/wood handicraft-3.jpg" alt="Wooden Toys">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Traditional Wooden Folk Toys</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Pine &amp; Teak with Non-Toxic Polish</div>
+                                <div><strong>Use:</strong> Shelf Display &amp; Artisan Child Toys</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Non-toxic, smoothly polished wooden vehicle and folk figurines.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Traditional Wooden Folk Toys"
+                                    data-category="Wood Handicrafts"
+                                    data-material="Natural Pine &amp; Teak with Organic Non-Toxic Lacquer"
+                                    data-desc="Smoothly finished handcrafted vehicle and puppet figurines celebrating indigenous folk tales and artisan carpentry."
+                                    data-designs="Vintage Steam Engine, Pull-Along Elephant, Village Cart"
+                                    data-usage="Children's Safe Toy, Rustic Shelf Display, Heritage Souvenir"
+                                    data-img="images/wood handicraft-3.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product: Jewelry Wardrobe -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/wood handicraft-11.jpg" alt="Mini Wardrobe Box">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Carved Jewelry Wardrobe Box</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Solid Walnut Wood &amp; Velvet</div>
+                                <div><strong>Use:</strong> Vanity Dressing Table Organizer</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Miniature carved dresser organizer with brass hinges and plush lining.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Carved Jewelry Wardrobe Box"
+                                    data-category="Wood Handicrafts"
+                                    data-material="Solid Walnut Wood with Velvet Lining &amp; Brass Hinges"
+                                    data-desc="Miniature carved dresser organizer with multi-drawer storage, floral filigree carving, and secure brass clasps."
+                                    data-designs="Mughal Floral Relief, Geometrical Jaali, Royal Archway"
+                                    data-usage="Jewelry Storage, Vanity Dressing Table Organizer, Heirloom Gift Box"
+                                    data-img="images/wood handicraft-11.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Aluminium Detail Section -->
+        <section id="cat-aluminium" class="mb-5 pt-3">
+            <div class="category-detail-header">
+                <h3>Aluminium Handicrafts Collection</h3>
+                <span class="badge bg-dark px-3 py-2">Cast Metal &amp; Hammered Finishes</span>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/aluminium handicraft-2.jpg" alt="Cast Aluminium Statue">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Sculpted Aluminium Art Piece</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Sand-Cast Aluminium with Mirror Polish</div>
+                                <div><strong>Use:</strong> Modern Living Room Console &amp; Gallery Plinth</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Contemporary metallic statuette with hand-buffed silver sheen.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Sculpted Aluminium Art Piece"
+                                    data-category="Aluminium Handicrafts"
+                                    data-material="Cast Aluminium with Hand-Buffed Mirror Polish"
+                                    data-desc="Contemporary fluid metallic sculpture combining modern minimalist aesthetics with traditional sand-casting artisan methods."
+                                    data-designs="Infinity Loop, Abstract Human Silhouette, Winged Arch"
+                                    data-usage="Modern Living Room Console, Art Gallery Plinth, Corporate Office Decor"
+                                    data-img="images/aluminium handicraft-2.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/aluminium handicraft-3.jpg" alt="Hammered Cookware">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Hand-Hammered Aluminium Cookware</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Food-Grade Heavy-Gauge Aluminium</div>
+                                <div><strong>Use:</strong> Authentic Kitchen Cooking &amp; Buffet Service</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Heavy-duty culinary pans and handis designed for slow cooking.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Hand-Hammered Aluminium Cookware"
+                                    data-category="Aluminium Handicrafts"
+                                    data-material="Food-Grade Hammered Heavy-Gauge Aluminium"
+                                    data-desc="Traditional round-bottom handis and cooking pots designed for optimal heat retention and authentic slow-cooked culinary dishes."
+                                    data-designs="Dimpled Hammered Finish, Brushed Satin, Polished Rim Handi"
+                                    data-usage="Traditional Kitchen Culinary Use, Buffet Catering Display, Rustic Kitchen Accent"
+                                    data-img="images/aluminium handicraft-3.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/aluminium handicraft-4.jpg" alt="Decorative Bowl">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Polished Aluminium Decorative Tray</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Solid Aluminium with Hammered Edge</div>
+                                <div><strong>Use:</strong> Coffee Table Catch-All &amp; Drink Serving</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Lightweight yet robust decorative serving platter.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Polished Aluminium Decorative Tray"
+                                    data-category="Aluminium Handicrafts"
+                                    data-material="Solid Aluminium with Scalloped Edge"
+                                    data-desc="Lightweight yet robust decorative serving platter resistant to tarnishing, finished with intricate hammered rim texturing."
+                                    data-designs="Circular Sunburst, Rectangular Baroque, Leaf Shaped"
+                                    data-usage="Coffee Table Catch-All Tray, Tea &amp; Drink Serving, Candle Base"
+                                    data-img="images/aluminium handicraft-4.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Decorative Detail Section -->
+        <section id="cat-decorative" class="mb-5 pt-3">
+            <div class="category-detail-header">
+                <h3>Handicraft Decorative Collection</h3>
+                <span class="badge bg-dark px-3 py-2">Glazed Blue Pottery &amp; Medallions</span>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/handicraft decorative-1000.jpeg" alt="Blue Pottery Vase">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Ceramic Blue Pottery Urn</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Quartz Powder &amp; Earthen Glaze</div>
+                                <div><strong>Use:</strong> Floral Stem Display &amp; Console Accent</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Traditional cobalt blue floral motifs hand-painted and kiln-fired.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Ceramic Blue Pottery Urn"
+                                    data-category="Handicraft Decorative"
+                                    data-material="Quartz Powder, Glass Powder &amp; Natural Earthen Glaze"
+                                    data-desc="World-famous Blue Pottery vase painted by hand with cobalt and turquoise floral arabesques, kiln-fired to a permanent glass finish."
+                                    data-designs="Traditional Persian Blue, Marigold Floral, Indigo Geometric"
+                                    data-usage="Floral Stem Display, Console Focal Point, Luxury Interior Gift"
+                                    data-img="images/handicraft decorative-1000.jpeg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/Decorative-Handicraft.1.jpg" alt="Mosaic Vase">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Heritage Treasures Centerpiece</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Terracotta &amp; Stained Glass Mosaic</div>
+                                <div><strong>Use:</strong> Foyer Centerpiece &amp; Lobby Accent</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Mosaic decorative urn celebrating ancestral palace art traditions.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Heritage Treasures Centerpiece"
+                                    data-category="Handicraft Decorative"
+                                    data-material="Terracotta Clay with Stained Glass Mosaic Inlay"
+                                    data-desc="Assembled mosaic decorative urn celebrating ancestral palace art traditions with iridescent reflective tiles."
+                                    data-designs="Royal Turquoise, Amber Sunset, Jewel Multi-Tone"
+                                    data-usage="Entrance Foyer Accent, Living Room Centerpiece, Hotel Lobby Decor"
+                                    data-img="images/Decorative-Handicraft.1.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/Decorative-Handicraft.200.jpg" alt="Rustic Charm">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Rustic Charm Wall Medallion</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Terra Clay &amp; Forged Metal Rim</div>
+                                <div><strong>Use:</strong> Feature Wall Hanging &amp; Balcony Accent</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Sculpted clay and distressed metal wall medallion.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Rustic Charm Wall Medallion"
+                                    data-category="Handicraft Decorative"
+                                    data-material="Distressed Terra Clay &amp; Hand-Forged Metal Rim"
+                                    data-desc="Round wall hanging medallion depicting folk agrarian life and ancient mandala patterns."
+                                    data-designs="Sun God Mandala, Tree of Life, Floral Chakra"
+                                    data-usage="Feature Wall Art, Balcony Ornament, Entryway Focal Point"
+                                    data-img="images/Decorative-Handicraft.200.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Table Wares Detail Section -->
+        <section id="cat-tables" class="mb-5 pt-3">
+            <div class="category-detail-header">
+                <h3>Table Wares Collection</h3>
+                <span class="badge bg-dark px-3 py-2">Artisan Dining &amp; Serving</span>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/Table wares.jpg" alt="Table Wares Set">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Artisan Brass Serving Platter</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Heavy Brass with Nickel Tinning</div>
+                                <div><strong>Use:</strong> Festive Entertaining &amp; Coffee Serving</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Embossed decorative tray ideal for welcoming guests.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Artisan Brass Serving Platter"
+                                    data-category="Table Wares"
+                                    data-material="Heavy Brass with Nickel Tinning"
+                                    data-desc="Embossed decorative dining tray crafted for serving traditional sweets, tea cups, and ceremonial snacks to honored guests."
+                                    data-designs="Royal Court Engraving, Starburst Center, Scalloped Border"
+                                    data-usage="Formal Dinner Entertaining, Festive Serving, Wedding Gift"
+                                    data-img="images/Table wares.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/7-Tables Wares/table wares-1.jpg" alt="Dining Accessories">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Handcrafted Cutlery Holder &amp; Stand</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Sheesham Wood &amp; Brass Accents</div>
+                                <div><strong>Use:</strong> Dining Organization &amp; Buffet Caddy</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Carved wood and brass napkin and cutlery organizer.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Handcrafted Cutlery Holder &amp; Stand"
+                                    data-category="Table Wares"
+                                    data-material="Sheesham Wood &amp; Cast Brass Accents"
+                                    data-desc="Multi-compartment dining table caddy for spoons, forks, knives, and napkins with brass corner inlays."
+                                    data-designs="4-Compartment Classic, Revolving Lazy Susan, Compact Dual Stand"
+                                    data-usage="Dining Table Organization, Restaurant Buffet Display, Housewarming Gift"
+                                    data-img="images/7-Tables Wares/table wares-1.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Home Décor Detail Section -->
+        <section id="cat-decor" class="mb-5 pt-3">
+            <div class="category-detail-header">
+                <h3>Home Décor Collection</h3>
+                <span class="badge bg-dark px-3 py-2">Living Room &amp; Ambient Accents</span>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/home decore-1.jpg" alt="Home Decor Urn">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Antique Clay &amp; Brass Urn</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Clay Vessel with Cast Brass Handles</div>
+                                <div><strong>Use:</strong> Living Room Floor Accent &amp; Corner Focal Point</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Distressed patina vessel creating a timeless rustic aura.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Antique Clay &amp; Brass Urn"
+                                    data-category="Home Décor"
+                                    data-material="Kiln-Fired Clay with Cast Brass Neck and Handles"
+                                    data-desc="Distressed patina vessel creating a timeless rustic aura, evoking ancient Mesopotamian water vessels."
+                                    data-designs="Earthy Terracotta, Olive Green Patina, Weathered Charcoal"
+                                    data-usage="Living Room Floor Accent, Corner Plant Stand Companion, Patio Urn"
+                                    data-img="images/home decore-1.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Candle Accessories Detail Section -->
+        <section id="cat-candles" class="mb-5 pt-3">
+            <div class="category-detail-header">
+                <h3>Candle Accessories Collection</h3>
+                <span class="badge bg-dark px-3 py-2">Atmospheric &amp; Spiritual Candleware</span>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/candle accessories-1.jpg" alt="Candle Holder">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Filigree Wrought Iron Candle Stand</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Pierced Wrought Iron (Midnight Finish)</div>
+                                <div><strong>Use:</strong> Balcony Ambience &amp; Romantic Dinners</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Pierced metal lattice casting romantic starry light projections.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Filigree Wrought Iron Candle Stand"
+                                    data-category="Candle Accessories"
+                                    data-material="Pierced Wrought Iron with Matte Midnight Finish"
+                                    data-desc="Pierced metal lattice lantern casting romantic starry light projections across walls during quiet evenings."
+                                    data-designs="Moroccan Tower, Hanging Lantern, Candelabra 3-Branch"
+                                    data-usage="Dinner Table Romance, Balcony Ambience, Spa &amp; Meditation Light"
+                                    data-img="images/candle accessories-1.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Other Products Detail Section -->
+        <section id="cat-other" class="mb-5 pt-3">
+            <div class="category-detail-header">
+                <h3>Other Products Collection</h3>
+                <span class="badge bg-dark px-3 py-2">Limited Editions &amp; Bespoke Crafts</span>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <div class="product-card-img-wrap">
+                            <img src="images/Decorative-Handicraft.2.jpg" alt="Ceremonial Brass Trumpet">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold fs-5 mb-1">Ceremonial Brass Horn (Tutari)</h4>
+                            <div class="small mb-2 text-dark">
+                                <div><strong>Material:</strong> Sheet Brass with Chiseled Bell</div>
+                                <div><strong>Use:</strong> Cultural Wall Trophy &amp; Traditional Festivals</div>
+                            </div>
+                            <p class="small text-muted mb-3 flex-grow-1">Authentic royal ceremonial brass instrument used in festivities.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning gap-2">
+                                <button type="button" class="btn-open-detail w-50"
+                                    data-name="Ceremonial Brass Horn (Tutari)"
+                                    data-category="Other Products"
+                                    data-material="Hand-Rolled Sheet Brass with Engraved Bell"
+                                    data-desc="Authentic royal ceremonial brass wind instrument traditionally sounded at royal entrances, harvest festivals, and joyous celebrations."
+                                    data-designs="Traditional Curved S-Horn, Straight Royal Trumpet, Miniature Souvenir"
+                                    data-usage="Cultural Wall Trophy, Festive Ceremony Instrument, Collector's Artifact"
+                                    data-img="images/Decorative-Handicraft.2.jpg">
+                                    🔍 Details
+                                </button>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary w-50 text-center">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+       PRODUCT DETAIL MODAL (PHASE 5 REQUIREMENT)
+       ========================================================================== -->
+    <div class="modal fade product-detail-modal" id="productDetailModal" tabindex="-1" aria-labelledby="modalProductTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalProductTitle">Product Name</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-12 col-md-5">
+                            <div class="detail-modal-img-wrap">
+                                <img src="images/logo.jpg" alt="Product Image" id="modalProductImg" class="detail-modal-img">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="detail-meta-table">
+                                <div class="detail-meta-row">
+                                    <div class="detail-meta-label">🏷️ Category:</div>
+                                    <div class="detail-meta-value fw-bold text-midnight" id="modalProductCategory">Handicrafts</div>
+                                </div>
+                                <div class="detail-meta-row">
+                                    <div class="detail-meta-label">✨ Material:</div>
+                                    <div class="detail-meta-value fw-semibold" id="modalProductMaterial">Brass / Wood</div>
+                                </div>
+                                <div class="detail-meta-row">
+                                    <div class="detail-meta-label">🎨 Available Designs:</div>
+                                    <div class="detail-meta-value" id="modalProductDesigns">Traditional Engraving</div>
+                                </div>
+                                <div class="detail-meta-row">
+                                    <div class="detail-meta-label">🏠 Recommended Use:</div>
+                                    <div class="detail-meta-value" id="modalProductUsage">Home Decoration</div>
+                                </div>
+                            </div>
+
+                            <h6 class="fw-bold text-midnight mb-2 font-heading">Artisan Description:</h6>
+                            <div class="detail-desc-box">
+                                <p class="mb-0" id="modalProductDesc">Handcrafted artisanal item.</p>
+                            </div>
+
+                            <div class="d-flex gap-2 flex-wrap">
+                                <a href="contact.html" class="btn btn-handicraft-primary flex-grow-1 text-center py-2">
+                                    Inquire About This Product
+                                </a>
+                                <button type="button" class="btn btn-secondary px-3" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       COMMON FOOTER
+       ========================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Col 1: About Venus Handicrafts -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5 class="footer-brand-title">Venus Handicrafts</h5>
+                    <p class="footer-description">
+                        Dedicated to preserving traditional artisanal craftsmanship since 1972. We curate and craft unique handmade creations in iron, brass, wood, glass, and clay, bringing authentic beauty to homes worldwide.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-secondary p-2">Artisan Made</span>
+                        <span class="badge bg-secondary p-2">Authentic Heritage</span>
+                        <span class="badge bg-secondary p-2">100% Handmade</span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-heading">Main Links</h6>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Categories -->
+                <div class="col-6 col-md-3 col-lg-3">
+                    <h6 class="footer-heading">Collections</h6>
+                    <ul class="footer-links-list">
+                        <li><a href="products.html#cat-iron">Iron Handicraft</a></li>
+                        <li><a href="products.html#cat-brass">Brass Handicraft</a></li>
+                        <li><a href="products.html#cat-wood">Wood Handicraft</a></li>
+                        <li><a href="products.html#cat-glass">Glass Handicraft</a></li>
+                        <li><a href="products.html#cat-aluminium">Aluminium Handicraft</a></li>
+                        <li><a href="products.html#cat-decor">Home Decor & Table Wares</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & Hours -->
+                <div class="col-12 col-md-12 col-lg-3">
+                    <h6 class="footer-heading">Contact & Hours</h6>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <span><a href="mailto:ibtisamadnan16@gmail.com">ibtisamadnan16@gmail.com</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>🕒</span>
+                        <span>Monday - Friday: 9am - 5pm EST</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-bottom-divider">
+
+            <div class="footer-copyright">
+                <p class="mb-0">&copy; 1972 Venus Handicrafts. All rights reserved. Crafted with passion for heritage artistry.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS & Theme Interactions -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

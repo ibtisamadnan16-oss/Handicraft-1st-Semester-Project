@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus Handicrafts - Crafting Timeless Decorative Handicrafts Since 1972</title>
+    <!-- Bootstrap CSS (Local with CDN Fallback) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google Fonts: Playfair Display, Poppins & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Main Theme Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       SECTION 1: COMMON HEADER & MAIN NAVBAR
+       ========================================================================== -->
+    <header class="top-header">
+        <div class="container">
+            <!-- Brand Logo & Title -->
+            <div class="brand-logo-container text-center">
+                <a href="index.html" class="brand-logo-link">
+                    <img src="images/logo.jpg" alt="Venus Handicrafts Logo" class="brand-logo-img">
+                    <h1 class="brand-title">Venus Handicrafts</h1>
+                    <span class="brand-subtitle">Authentic Handmade Heritage & Artistry</span>
+                </a>
+            </div>
+
+            <!-- Search Bar & Utility Icons -->
+            <div class="row align-items-center top-action-bar justify-content-between g-3">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <form id="siteSearchForm" class="search-container mx-auto mx-md-0" action="products.html" method="get">
+                        <div class="input-group search-input-group">
+                            <button type="submit" class="search-icon-btn" aria-label="Search">
+                                <img src="images/icons8-search-25 (1).png" alt="Search" class="search-icon-img">
+                            </button>
+                            <input type="text" id="siteSearchInput" name="q" class="form-control search-input" placeholder="Search handcrafted treasures..." aria-label="Search products">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-12 col-md-auto text-center text-md-end">
+                    <div class="quick-action-icons justify-content-center justify-content-md-end">
+                        <a href="contact.html" class="action-icon-link" title="My Account">
+                            <img src="images/icons8-account-24.png" alt="Account" class="action-icon-img">
+                        </a>
+                        <a href="#" class="action-icon-link action-wishlist" title="Wishlist">
+                            <img src="images/icons8-heart-25.png" alt="Wishlist" class="action-icon-img">
+                            <span class="action-badge">2</span>
+                        </a>
+                        <a href="#" class="action-icon-link action-cart" title="Shopping Cart">
+                            <img src="images/icons8-shop-25.png" alt="Cart" class="action-icon-img">
+                            <span class="action-badge">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Decorative Diamond Divider -->
+            <div class="hr-line-wrapper">
+                <div class="hr-line">
+                    <div class="diamond"></div>
+                    <div class="line"></div>
+                    <div class="diamond"></div>
+                </div>
+            </div>
+
+            <!-- Main Responsive Navbar -->
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <div class="container-fluid p-0">
+                    <button class="navbar-toggler w-100 py-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarNav" aria-controls="mainNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="d-flex align-items-center justify-content-center gap-2 text-midnight fw-bold">
+                            <span class="navbar-toggler-icon"></span> Navigation Menu
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNavbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item fw-bold border-bottom pb-2" href="products.html">All Products Overview</a></li>
+                                    <li><a class="dropdown-item" href="products.html#cat-iron">Iron Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="products.html#cat-glass">Glass Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="products.html#cat-brass">Brass Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="products.html#cat-wood">Wood Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="products.html#cat-aluminium">Aluminium Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="products.html#cat-decorative">Decorative Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="products.html#cat-tables">Table Wares</a></li>
+                                    <li><a class="dropdown-item" href="products.html#cat-decor">Home Decor</a></li>
+                                    <li><a class="dropdown-item" href="products.html#cat-candles">Candle Accessories</a></li>
+                                    <li><a class="dropdown-item" href="products.html#cat-other">Other Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sitemap.html">Site Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+       MAIN CONTENT
+       ========================================================================== -->
+    <main>
+        <!-- ==========================================================================
+           SECTION 2: HERO / BANNER SECTION
+           ========================================================================== -->
+        <section class="container">
+            <div class="hero-banner-wrapper">
+                <!-- Background Carousel Slider -->
+                <div id="heroBannerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/3-Brass Handicraft/brass handicraft-2.jpg" class="d-block w-100 hero-slide-img" alt="Venus Handicrafts Brass Collection">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/1-Iron Handicraft/iron handicraft-1.jpg" class="d-block w-100 hero-slide-img" alt="Venus Handicrafts Iron Artistry">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/9-Candle Accessories/candle accessories-1.jpg" class="d-block w-100 hero-slide-img" alt="Venus Handicrafts Decorative Ambient Art">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Content Overlay with Required Text & Buttons -->
+                <div class="hero-overlay-content">
+                    <span class="hero-badge">Artisan Heritage</span>
+                    <h2 class="hero-title">Venus Handicrafts</h2>
+                    <p class="hero-subtitle">Crafting Timeless Decorative Handicrafts Since 1972</p>
+                    <div class="hero-btn-group">
+                        <a href="products.html" class="hero-btn-primary">Explore Products</a>
+                        <a href="gallery.html" class="hero-btn-secondary">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           SECTION 3: VENUS HANDICRAFTS INTRODUCTION
+           ========================================================================== -->
+        <section class="container mb-5">
+            <div class="row align-items-center g-4 content-card">
+                <div class="col-12 col-lg-5">
+                    <div class="rounded-4 overflow-hidden border border-2 border-midnight shadow-sm">
+                        <img src="images/hc.jpeg" alt="Artisan Crafting at Venus Handicrafts" class="img-fluid w-100" style="min-height: 320px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <span class="badge bg-dark px-3 py-2 text-uppercase mb-2">Preserving Ancient Traditions</span>
+                    <h2 class="section-main-title text-start mb-3">Authentic Heritage Handcrafted With Passion</h2>
+                    <p class="text-dark mb-3" style="font-size: 1.05rem; line-height: 1.8;">
+                        At <strong>Venus Handicrafts</strong>, every artifact tells an enduring story of human creativity, patience, and devotion. Founded over five decades ago, our collective brings together master woodcarvers, iron smelters, glass artists, and metal sculptors dedicated to keeping centuries-old artisanal traditions alive.
+                    </p>
+                    <p class="text-dark mb-4" style="font-size: 1rem; line-height: 1.7;">
+                        Unlike mass-manufactured factory goods, our handicrafts are individually shaped by hand using sustainably sourced woods, solid brass alloys, hand-blown glassware, and authentic ceramic clays. We invite you to bring genuine cultural warmth and timeless elegance into your home.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="about.html" class="btn btn-handicraft-primary">Read Our Full Story</a>
+                        <a href="contact.html" class="btn btn-handicraft-outline">Custom Order Inquiries</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           SECTION 4: FEATURED HANDICRAFTS
+           ========================================================================== -->
+        <section class="container mb-5">
+            <div class="section-header-block">
+                <h3 class="section-main-title">Featured Handicrafts</h3>
+                <p class="section-sub-title">Carefully handpicked iconic masterpieces admired by collectors and interior stylists</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Featured Item 1: Iron Antique Watches -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <span class="product-card-badge">Best Seller</span>
+                        <div class="product-card-img-wrap">
+                            <img src="images/1-Iron Handicraft/iron handicraft-1.jpg" alt="Antique Watches">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold mb-1" style="font-size: 1.15rem;">Antique Iron Pocket Watch</h4>
+                            <p class="small text-muted mb-3">Hand-hammered iron casing with vintage gear accents.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning">
+                                <span class="product-card-price">$190</span>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Item 2: Brass Royal Artifacts -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <span class="product-card-badge">Heritage</span>
+                        <div class="product-card-img-wrap">
+                            <img src="images/3-Brass Handicraft/brass handicraft-2.jpg" alt="Brass Artifacts">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold mb-1" style="font-size: 1.15rem;">Royal Brass Artifact Urn</h4>
+                            <p class="small text-muted mb-3">Chiseled golden brass vase with court floral engraving.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning">
+                                <span class="product-card-price">$220</span>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Item 3: Turkish Mosaic Lamp -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <span class="product-card-badge">Popular</span>
+                        <div class="product-card-img-wrap">
+                            <img src="images/Decorative-Handicraft.1.jpg" alt="Mosaic Lamp">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold mb-1" style="font-size: 1.15rem;">Mosaic Stained Glass Lamp</h4>
+                            <p class="small text-muted mb-3">Vibrant multi-colored glass tesserae with brass base.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning">
+                                <span class="product-card-price">$195</span>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Item 4: Carved Wood Basket -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="product-card-featured h-100 d-flex flex-column">
+                        <span class="product-card-badge">Artisan</span>
+                        <div class="product-card-img-wrap">
+                            <img src="images/wood handicraft-2.jpg" alt="Artisan Wooden Basket">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="fw-bold mb-1" style="font-size: 1.15rem;">Collapsible Rosewood Basket</h4>
+                            <p class="small text-muted mb-3">Master-carved spiral mechanism folding from solid timber.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top border-warning">
+                                <span class="product-card-price">$95</span>
+                                <a href="contact.html" class="btn btn-sm btn-handicraft-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           SECTION 5: PRODUCT CATEGORIES
+           ========================================================================== -->
+        <section class="container mb-5">
+            <div class="section-header-block">
+                <h3 class="section-main-title">Product Categories</h3>
+                <p class="section-sub-title">Browse through our specialized categories of handcrafted treasures</p>
+            </div>
+
+            <div class="row g-3 g-md-4">
+                <!-- Cat 1: Iron -->
+                <div class="col-6 col-md-4 col-lg-4">
+                    <a href="products.html#cat-iron" class="category-box-card">
+                        <img src="images/1-Iron Handicraft/iron handicraft-1.jpg" alt="Iron Handicraft" class="category-box-thumb">
+                        <h4 class="category-box-title">Iron Handicrafts</h4>
+                        <p class="category-box-desc">Forged iron statues & vintage clocks</p>
+                    </a>
+                </div>
+
+                <!-- Cat 2: Brass -->
+                <div class="col-6 col-md-4 col-lg-4">
+                    <a href="products.html#cat-brass" class="category-box-card">
+                        <img src="images/3-Brass Handicraft/brass handicraft-2.jpg" alt="Brass Handicraft" class="category-box-thumb">
+                        <h4 class="category-box-title">Brass Handicrafts</h4>
+                        <p class="category-box-desc">Polished urns, turtles & mini cannons</p>
+                    </a>
+                </div>
+
+                <!-- Cat 3: Wood -->
+                <div class="col-6 col-md-4 col-lg-4">
+                    <a href="products.html#cat-wood" class="category-box-card">
+                        <img src="images/wood handicraft-2.jpg" alt="Wood Handicraft" class="category-box-thumb">
+                        <h4 class="category-box-title">Wood Handicrafts</h4>
+                        <p class="category-box-desc">Carved baskets, wardrobes & traditional toys</p>
+                    </a>
+                </div>
+
+                <!-- Cat 4: Glass -->
+                <div class="col-6 col-md-4 col-lg-4">
+                    <a href="products.html#cat-glass" class="category-box-card">
+                        <img src="images/2-Glass Handicraft/glass handicraft-1.jpg" alt="Glass Handicraft" class="category-box-thumb">
+                        <h4 class="category-box-title">Glass Handicrafts</h4>
+                        <p class="category-box-desc">Stained glass lamps & oil lanterns</p>
+                    </a>
+                </div>
+
+                <!-- Cat 5: Aluminium -->
+                <div class="col-6 col-md-4 col-lg-4">
+                    <a href="products.html#cat-aluminium" class="category-box-card">
+                        <img src="images/5-AAluminium Handicraft/aluminium handicraft-2.jpg" alt="Aluminium Handicraft" class="category-box-thumb">
+                        <h4 class="category-box-title">Aluminium Crafts</h4>
+                        <p class="category-box-desc">Cast sculptures & hammered cookware</p>
+                    </a>
+                </div>
+
+                <!-- Cat 6: Decorative -->
+                <div class="col-6 col-md-4 col-lg-4">
+                    <a href="products.html#cat-decorative" class="category-box-card">
+                        <img src="images/handicraft decorative-1000.jpeg" alt="Decorative Handicraft" class="category-box-thumb">
+                        <h4 class="category-box-title">Decorative Crafts</h4>
+                        <p class="category-box-desc">Glazed Blue Pottery & rustic medallions</p>
+                    </a>
+                </div>
+
+                <!-- Cat 7: Table Wares -->
+                <div class="col-6 col-md-4 col-lg-4">
+                    <a href="products.html#cat-tables" class="category-box-card">
+                        <img src="images/7-Tables Wares/table wares-1.jpg" alt="Table Wares" class="category-box-thumb">
+                        <h4 class="category-box-title">Table Wares</h4>
+                        <p class="category-box-desc">Artisanal serving trays & dining decor</p>
+                    </a>
+                </div>
+
+                <!-- Cat 8: Home Decor -->
+                <div class="col-6 col-md-4 col-lg-4">
+                    <a href="products.html#cat-decor" class="category-box-card">
+                        <img src="images/8-Home Decor/home decore-1.jpg" alt="Home Decor" class="category-box-thumb">
+                        <h4 class="category-box-title">Home Decor</h4>
+                        <p class="category-box-desc">Wall plaques, bowls & statement pieces</p>
+                    </a>
+                </div>
+
+                <!-- Cat 9: Candle Accessories -->
+                <div class="col-6 col-md-4 col-lg-4">
+                    <a href="products.html#cat-candles" class="category-box-card">
+                        <img src="images/9-Candle Accessories/candle accessories-1.jpg" alt="Candle Accessories" class="category-box-thumb">
+                        <h4 class="category-box-title">Candle Accessories</h4>
+                        <p class="category-box-desc">Intricate candleholders & ambient stands</p>
+                    </a>
+                </div>
+
+                <!-- Cat 10: Other Products -->
+                <div class="col-6 col-md-4 col-lg-4">
+                    <a href="products.html#cat-other" class="category-box-card">
+                        <img src="images/Decorative-Handicraft.2.jpg" alt="Other Products" class="category-box-thumb">
+                        <h4 class="category-box-title">Other Products</h4>
+                        <p class="category-box-desc">Ceremonial instruments & bespoke crafts</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           SECTION 6: WHY CHOOSE US
+           ========================================================================== -->
+        <section class="container mb-5">
+            <div class="section-header-block">
+                <h3 class="section-main-title">Why Choose Venus Handicrafts</h3>
+                <p class="section-sub-title">Our commitment to authentic artistry, uncompromising quality, and fair trade heritage</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="why-card">
+                        <div class="why-icon-bubble">✋</div>
+                        <h5>100% Handmade</h5>
+                        <p>Each piece is individually shaped, carved, and detailed by master artisans without industrial shortcuts.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="why-card">
+                        <div class="why-icon-bubble">🏛️</div>
+                        <h5>Heritage Since 1972</h5>
+                        <p>Over 50 years of trusted expertise preserving indigenous folk art and timeless cultural designs.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="why-card">
+                        <div class="why-icon-bubble">🌿</div>
+                        <h5>Sustainable Materials</h5>
+                        <p>Responsibly sourced hardwoods, reclaimed iron, pure brass alloys, and non-toxic earthen glazes.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="why-card">
+                        <div class="why-icon-bubble">📦</div>
+                        <h5>Safe Worldwide Transit</h5>
+                        <p>Specialized shock-absorbent multi-layer packaging ensuring fragile artifacts reach you in mint condition.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           SECTION 7: GALLERY PREVIEW
+           ========================================================================== -->
+        <section class="container mb-5">
+            <div class="section-header-block">
+                <h3 class="section-main-title">Gallery Highlights</h3>
+                <p class="section-sub-title">Glimpse into our workshop creations capturing the interplay of fire, wood, and metal</p>
+            </div>
+
+            <div class="row g-3 g-md-4 mb-4">
+                <div class="col-6 col-md-3">
+                    <div class="gallery-preview-tile">
+                        <img src="images/1-Iron Handicraft/iron handicraft-1.jpg" alt="Iron Artistry Preview">
+                        <a href="gallery.html" class="gallery-preview-overlay">View In Gallery</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="gallery-preview-tile">
+                        <img src="images/3-Brass Handicraft/brass handicraft-1.jpg" alt="Brass Urn Preview">
+                        <a href="gallery.html" class="gallery-preview-overlay">View In Gallery</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="gallery-preview-tile">
+                        <img src="images/2-Glass Handicraft/glass handicraft-1.jpg" alt="Glass Lamp Preview">
+                        <a href="gallery.html" class="gallery-preview-overlay">View In Gallery</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="gallery-preview-tile">
+                        <img src="images/4-Wood Handicraft/wood handicraft-1.jpg" alt="Wood Carving Preview">
+                        <a href="gallery.html" class="gallery-preview-overlay">View In Gallery</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="gallery.html" class="btn btn-handicraft-outline px-4 py-2">Explore Complete Gallery (10+ Collections) &rarr;</a>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           SECTION 8: CALL-TO-ACTION (CTA) SECTION
+           ========================================================================== -->
+        <section class="container mb-5">
+            <div class="cta-banner-wrapper">
+                <h2>Looking for Bespoke Handicrafts or Bulk Orders?</h2>
+                <p>
+                    Whether you are an interior architect styling a heritage estate, a collector seeking custom brass casting, or looking for artisanal wedding favors, our studio craftspeople are ready to bring your vision to life.
+                </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="contact.html" class="btn btn-handicraft-primary px-4 py-3" style="font-size: 1.1rem;">Inquire About Custom Orders</a>
+                    <a href="faq.html" class="btn btn-light px-4 py-3 text-midnight fw-bold" style="border-radius: 50px; font-family: var(--font-heading);">Read FAQs</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+       SECTION 9: COMMON FOOTER
+       ========================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Col 1: About Venus Handicrafts -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5 class="footer-brand-title">Venus Handicrafts</h5>
+                    <p class="footer-description">
+                        Dedicated to preserving traditional artisanal craftsmanship since 1972. We curate and craft unique handmade creations in iron, brass, wood, glass, and clay, bringing authentic beauty to homes worldwide.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-secondary p-2">Artisan Made</span>
+                        <span class="badge bg-secondary p-2">Authentic Heritage</span>
+                        <span class="badge bg-secondary p-2">100% Handmade</span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-heading">Main Links</h6>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Categories -->
+                <div class="col-6 col-md-3 col-lg-3">
+                    <h6 class="footer-heading">Collections</h6>
+                    <ul class="footer-links-list">
+                        <li><a href="products.html#iron">Iron Handicraft</a></li>
+                        <li><a href="products.html#brass">Brass Handicraft</a></li>
+                        <li><a href="products.html#wood">Wood Handicraft</a></li>
+                        <li><a href="products.html#glass">Glass Handicraft</a></li>
+                        <li><a href="products.html#aluminium">Aluminium Handicraft</a></li>
+                        <li><a href="products.html#decor">Home Decor & Table Wares</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & Hours -->
+                <div class="col-12 col-md-12 col-lg-3">
+                    <h6 class="footer-heading">Contact & Hours</h6>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <span><a href="mailto:ibtisamadnan16@gmail.com">ibtisamadnan16@gmail.com</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>🕒</span>
+                        <span>Monday - Friday: 9am - 5pm EST</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-bottom-divider">
+
+            <div class="footer-copyright">
+                <p class="mb-0">&copy; 1972 Venus Handicrafts. All rights reserved. Crafted with passion for heritage artistry.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS & Theme Interactions -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

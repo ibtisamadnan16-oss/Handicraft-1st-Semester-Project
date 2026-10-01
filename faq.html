@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions (FAQs) - Venus Handicrafts</title>
+    <!-- Bootstrap CSS (Local with CDN Fallback) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google Fonts: Playfair Display, Poppins & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Main Theme Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER SECTION ==================== -->
+    <header class="top-header">
+        <div class="container">
+            <!-- Brand Logo & Title -->
+            <div class="brand-logo-container text-center">
+                <a href="index.html" class="brand-logo-link">
+                    <img src="images/logo.jpg" alt="Venus Handicrafts Logo" class="brand-logo-img">
+                    <h1 class="brand-title">Venus Handicrafts</h1>
+                    <span class="brand-subtitle">Crafting Timeless Decorative Handicrafts Since 1972</span>
+                </a>
+            </div>
+
+            <!-- Search Bar & Utility Icons -->
+            <div class="row align-items-center top-action-bar justify-content-between g-3">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <form id="siteSearchForm" class="search-container mx-auto mx-md-0" action="products.html" method="get">
+                        <div class="input-group search-input-group">
+                            <button type="submit" class="search-icon-btn" aria-label="Search">
+                                <img src="images/icons8-search-25 (1).png" alt="Search" class="search-icon-img">
+                            </button>
+                            <input type="text" id="siteSearchInput" name="q" class="form-control search-input" placeholder="Search handcrafted items or questions..." aria-label="Search">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-12 col-md-auto text-center text-md-end">
+                    <div class="quick-action-icons justify-content-center justify-content-md-end">
+                        <a href="contact.html" class="action-icon-link" title="My Account">
+                            <img src="images/icons8-account-24.png" alt="Account" class="action-icon-img">
+                        </a>
+                        <a href="products.html" class="action-icon-link action-wishlist" title="Wishlist">
+                            <img src="images/icons8-heart-25.png" alt="Wishlist" class="action-icon-img">
+                            <span class="action-badge">2</span>
+                        </a>
+                        <a href="contact.html" class="action-icon-link action-cart" title="Inquiry Basket">
+                            <img src="images/icons8-shop-25.png" alt="Cart" class="action-icon-img">
+                            <span class="action-badge">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Decorative Diamond Divider -->
+            <div class="hr-line-wrapper">
+                <div class="hr-line">
+                    <div class="diamond"></div>
+                    <div class="line"></div>
+                    <div class="diamond"></div>
+                </div>
+            </div>
+
+            <!-- Main Responsive Navbar -->
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <div class="container-fluid p-0">
+                    <button class="navbar-toggler w-100 py-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarNav" aria-controls="mainNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="d-flex align-items-center justify-content-center gap-2 text-midnight fw-bold">
+                            <span class="navbar-toggler-icon"></span> Navigation Menu
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNavbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item fw-bold border-bottom pb-2" href="products.html">All 10 Categories Overview</a></li>
+                                    <li><a class="dropdown-item" href="products.html#iron">Iron Handicrafts</a></li>
+                                    <li><a class="dropdown-item" href="products.html#glass">Glass Handicrafts</a></li>
+                                    <li><a class="dropdown-item" href="products.html#brass">Brass Handicrafts</a></li>
+                                    <li><a class="dropdown-item" href="products.html#wood">Wood Handicrafts</a></li>
+                                    <li><a class="dropdown-item" href="products.html#aluminium">Aluminium Handicrafts</a></li>
+                                    <li><a class="dropdown-item" href="products.html#decorative">Handicraft Decorative</a></li>
+                                    <li><a class="dropdown-item" href="products.html#tables">Table Wares</a></li>
+                                    <li><a class="dropdown-item" href="products.html#decor">Home Décor</a></li>
+                                    <li><a class="dropdown-item" href="products.html#candles">Candle Accessories</a></li>
+                                    <li><a class="dropdown-item" href="products.html#other">Other Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="faq.html">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sitemap.html">Site Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="container my-5" style="max-width: 960px;">
+        <!-- Page Header -->
+        <div class="page-header-banner text-center mb-5">
+            <span class="badge px-3 py-2 text-uppercase mb-2" style="background-color: var(--text-midnight); color: var(--gold-accent); letter-spacing: 1px;">Help &amp; Support</span>
+            <h2 class="page-title mt-2">Frequently Asked Questions</h2>
+            <p class="page-lead mx-auto" style="max-width: 700px;">
+                Find quick answers to common inquiries about our manufacturing process, international export services, wholesale partnerships, and custom artisanal designs.
+            </p>
+        </div>
+
+        <!-- Accordion Section -->
+        <div class="accordion faq-accordion shadow-sm" id="faqAccordion">
+
+            <!-- Question 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        <span class="faq-q-number">1</span>
+                        <span>What types of handicrafts do you manufacture?</span>
+                    </button>
+                </h2>
+                <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <p class="mb-2">
+                            Since 1972, <strong>Venus Handicrafts</strong> has specialized in a rich, comprehensive spectrum of handcrafted decorative and utility items. Our primary manufacturing categories include:
+                        </p>
+                        <ul class="mb-3 ps-3">
+                            <li><strong>Metal Handicrafts:</strong> Wrought iron wall art, brass vases, brass figurines, and polished aluminium centerpieces.</li>
+                            <li><strong>Wood &amp; Glass:</strong> Hand-carved solid wood panels, antique mirrors, and mouth-blown decorative glass vessels.</li>
+                            <li><strong>Living &amp; Dining Decor:</strong> Elegant table wares, fruit platters, charger plates, and tabletop ornaments.</li>
+                            <li><strong>Lighting &amp; Ambiance:</strong> Handcrafted candle accessories, candelabras, tea light holders, and decorative lanterns.</li>
+                        </ul>
+                        <p class="mb-0 text-muted">
+                            Explore our comprehensive collection directly on our <a href="products.html" class="fw-bold text-decoration-underline text-midnight">Products Catalog</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                        <span class="faq-q-number">2</span>
+                        <span>Do you export products internationally?</span>
+                    </button>
+                </h2>
+                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <p class="mb-2">
+                            <strong>Yes, absolutely.</strong> Exporting has been a core pillar of Venus Handicrafts for over five decades. We routinely supply our artistic handicraft collections to clients across:
+                        </p>
+                        <ul class="mb-3 ps-3">
+                            <li><strong>North America &amp; Europe:</strong> Serving leading department stores, boutique decor chains, and luxury gift shops.</li>
+                            <li><strong>Middle East &amp; GCC:</strong> Fulfilling large hospitality decor projects, luxury hotels, and palatial home accents.</li>
+                            <li><strong>Asia-Pacific:</strong> Partnering with regional lifestyle brands and retail distribution networks.</li>
+                        </ul>
+                        <p class="mb-0">
+                            All our overseas consignments comply with global export packaging, fumigation, moisture protection, and custom maritime or air-freight logistical protocols.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                        <span class="faq-q-number">3</span>
+                        <span>Can wholesalers place bulk orders?</span>
+                    </button>
+                </h2>
+                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <p class="mb-2">
+                            <strong>Yes, we warmly welcome wholesale and commercial bulk inquiries.</strong> We work extensively with global importers, trade wholesalers, retail catalog houses, and hospitality developers.
+                        </p>
+                        <ul class="mb-3 ps-3">
+                            <li><strong>Flexible Minimum Order Quantities (MOQs):</strong> Accommodating both mixed-carton trial shipments and full 20ft / 40ft container loads (FCL).</li>
+                            <li><strong>Tiered Wholesale Pricing:</strong> Competitive factory-direct bulk rate cards based on order volume.</li>
+                            <li><strong>Custom Packaging &amp; Barcoding:</strong> Private-label boxing, barcodes, and master carton drop-ship packaging tailored to your brand.</li>
+                        </ul>
+                        <p class="mb-0">
+                            To request our current wholesale trade sheet, please submit your inquiries via our <a href="contact.html" class="fw-bold text-decoration-underline text-midnight">Contact Us page</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                        <span class="faq-q-number">4</span>
+                        <span>What materials are used in your products?</span>
+                    </button>
+                </h2>
+                <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <p class="mb-2">
+                            We pride ourselves on using <strong>100% genuine, premium-grade, ethically sourced materials</strong> engineered for aesthetic beauty and generational durability:
+                        </p>
+                        <div class="row g-2 mt-1">
+                            <div class="col-sm-6">
+                                <div class="p-2 border rounded bg-white-50">
+                                    <strong class="text-midnight">✨ Solid Brass:</strong> Hand-cast and engraved with antique, mirror, or brushed patinas.
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="p-2 border rounded bg-white-50">
+                                    <strong class="text-midnight">⚒️ Wrought &amp; Cast Iron:</strong> Powder-coated and rust-treated for interior &amp; exterior decor.
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="p-2 border rounded bg-white-50">
+                                    <strong class="text-midnight">🪵 Seasoned Hardwoods:</strong> Mango wood, Sheesham (rosewood), and acacia with beeswax finish.
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="p-2 border rounded bg-white-50">
+                                    <strong class="text-midnight">🏺 Glass &amp; Aluminium:</strong> Kiln-fused artisan glass and cast alloy aluminium with nickel/gold plating.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                        <span class="faq-q-number">5</span>
+                        <span>Do you provide customized handicraft designs?</span>
+                    </button>
+                </h2>
+                <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <p class="mb-2">
+                            <strong>Yes, customization is one of our greatest strengths.</strong> Our master craftsmen and design department can bring your unique design concepts to reality:
+                        </p>
+                        <ul class="mb-2 ps-3">
+                            <li><strong>Custom Specifications:</strong> Dimension alterations, color finishes, electroplating choices, and engraving details.</li>
+                            <li><strong>Bespoke Prototyping:</strong> We develop clay, wax, or metal physical prototypes based on sketches, CAD drawings, or sample photographs.</li>
+                            <li><strong>Private Label Manufacturing (OEM/ODM):</strong> Exclusive contract manufacturing with complete intellectual property protection.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+                        <span class="faq-q-number">6</span>
+                        <span>How can we contact Venus Handicrafts?</span>
+                    </button>
+                </h2>
+                <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <p class="mb-3">
+                            You can easily reach our customer relations and international export desk through the following channels:
+                        </p>
+                        <div class="row g-3 justify-content-center">
+                            <div class="col-md-6">
+                                <div class="p-3 bg-white-50 rounded border text-center">
+                                    <div class="fs-4 mb-1">✉️</div>
+                                    <div class="fw-bold text-midnight">Email Us Directly</div>
+                                    <a href="mailto:ibtisamadnan16@gmail.com" class="text-decoration-underline small">ibtisamadnan16@gmail.com</a>
+                                    <div class="text-muted" style="font-size: 0.75rem;">Replies within 24 business hours</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 bg-white-50 rounded border text-center">
+                                    <div class="fs-4 mb-1">📝</div>
+                                    <div class="fw-bold text-midnight">Online Inquiry Form</div>
+                                    <a href="contact.html" class="btn btn-sm btn-outline-dark mt-1 px-3">Go to Contact Form</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
+                        <span class="faq-q-number">7</span>
+                        <span>Where is Venus Handicrafts located?</span>
+                    </button>
+                </h2>
+                <div id="faqCollapse7" class="accordion-collapse collapse" aria-labelledby="faqHeading7" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <p class="mb-2">
+                            Our primary corporate showroom and export operations are located at:
+                        </p>
+                        <div class="p-3 border rounded bg-white-50 mb-3">
+                            <h6 class="fw-bold text-midnight mb-1">📍 Venus Handicrafts Corporate Showroom &amp; Exports</h6>
+                            <p class="mb-1">Karachi, Pakistan</p>
+                            <p class="mb-0 text-muted small">Specialized Artisan Workshops &amp; Foundry Units: Regional Heritage Craft Centers</p>
+                        </div>
+                        <p class="mb-0">
+                            Buyers and wholesalers are welcome to visit our display showroom by prior appointment to examine physical finish samples and craft portfolios. Visit our <a href="contact.html" class="fw-bold text-decoration-underline text-midnight">Contact page</a> to schedule a visit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ==================== STILL HAVE QUESTIONS CTA ==================== -->
+        <div class="faq-cta-box text-center mt-5">
+            <h3 class="text-white mb-2" style="font-family: var(--font-heading);">Still Have Questions?</h3>
+            <p class="text-light mb-4 mx-auto" style="max-width: 650px;">
+                Our artisan consultants and export specialists are happy to answer any queries regarding custom sizes, bulk container orders, or catalog pricing.
+            </p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center">
+                <a href="contact.html" class="btn btn-warning btn-lg px-4 fw-bold" style="background-color: var(--gold-accent); color: var(--text-midnight); border: none;">
+                    ✉️ Send Us an Inquiry
+                </a>
+                <a href="products.html" class="btn btn-outline-light btn-lg px-4">
+                    🏺 Explore Our Products
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ==================== COMMON FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5 class="footer-brand-title">Venus Handicrafts</h5>
+                    <p class="footer-description">
+                        Dedicated to preserving traditional artisanal craftsmanship since 1972. We manufacture and export authentic handmade creations in iron, brass, wood, glass, and aluminium to wholesalers, retailers, and discerning connoisseurs worldwide.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-secondary p-2">Artisan Made</span>
+                        <span class="badge bg-secondary p-2">Authentic Heritage</span>
+                        <span class="badge bg-secondary p-2">100% Handmade</span>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-heading">Quick Links</h6>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                    </ul>
+                </div>
+
+                <!-- Product Categories -->
+                <div class="col-6 col-md-3 col-lg-3">
+                    <h6 class="footer-heading">Collections</h6>
+                    <ul class="footer-links-list">
+                        <li><a href="products.html#iron">Iron Handicrafts</a></li>
+                        <li><a href="products.html#brass">Brass Handicrafts</a></li>
+                        <li><a href="products.html#wood">Wood Handicrafts</a></li>
+                        <li><a href="products.html#glass">Glass Handicrafts</a></li>
+                        <li><a href="products.html#aluminium">Aluminium Handicrafts</a></li>
+                        <li><a href="products.html#decor">Home Décor &amp; Table Wares</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Location -->
+                <div class="col-12 col-md-12 col-lg-3">
+                    <h6 class="footer-heading">Contact &amp; Hours</h6>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <span><a href="mailto:ibtisamadnan16@gmail.com">ibtisamadnan16@gmail.com</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>🕒</span>
+                        <span>Monday - Friday: 9am - 5pm EST</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-bottom-divider">
+
+            <div class="footer-copyright">
+                <p class="mb-0">&copy; 1972 Venus Handicrafts. All rights reserved. Crafted with passion for heritage artistry.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS & Theme Interactions -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

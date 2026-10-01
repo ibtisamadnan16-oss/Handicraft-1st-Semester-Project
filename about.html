@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Venus Handicrafts | Heritage Since 1972</title>
+    <!-- Bootstrap CSS (Local with CDN Fallback) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google Fonts: Playfair Display, Poppins & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Main Theme Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       SECTION 1: COMMON HEADER & MAIN NAVBAR
+       ========================================================================== -->
+    <header class="top-header">
+        <div class="container">
+            <!-- Brand Logo & Title -->
+            <div class="brand-logo-container text-center">
+                <a href="index.html" class="brand-logo-link">
+                    <img src="images/logo.jpg" alt="Venus Handicrafts Logo" class="brand-logo-img">
+                    <h1 class="brand-title">Venus Handicrafts</h1>
+                    <span class="brand-subtitle">Authentic Handmade Heritage & Artistry</span>
+                </a>
+            </div>
+
+            <!-- Search Bar & Utility Icons -->
+            <div class="row align-items-center top-action-bar justify-content-between g-3">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <form id="siteSearchForm" class="search-container mx-auto mx-md-0" action="products.html" method="get">
+                        <div class="input-group search-input-group">
+                            <button type="submit" class="search-icon-btn" aria-label="Search">
+                                <img src="images/icons8-search-25 (1).png" alt="Search" class="search-icon-img">
+                            </button>
+                            <input type="text" id="siteSearchInput" name="q" class="form-control search-input" placeholder="Search handcrafted treasures..." aria-label="Search products">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-12 col-md-auto text-center text-md-end">
+                    <div class="quick-action-icons justify-content-center justify-content-md-end">
+                        <a href="contact.html" class="action-icon-link" title="My Account">
+                            <img src="images/icons8-account-24.png" alt="Account" class="action-icon-img">
+                        </a>
+                        <a href="#" class="action-icon-link action-wishlist" title="Wishlist">
+                            <img src="images/icons8-heart-25.png" alt="Wishlist" class="action-icon-img">
+                            <span class="action-badge">2</span>
+                        </a>
+                        <a href="#" class="action-icon-link action-cart" title="Shopping Cart">
+                            <img src="images/icons8-shop-25.png" alt="Cart" class="action-icon-img">
+                            <span class="action-badge">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Decorative Diamond Divider -->
+            <div class="hr-line-wrapper">
+                <div class="hr-line">
+                    <div class="diamond"></div>
+                    <div class="line"></div>
+                    <div class="diamond"></div>
+                </div>
+            </div>
+
+            <!-- Main Responsive Navbar -->
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <div class="container-fluid p-0">
+                    <button class="navbar-toggler w-100 py-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarNav" aria-controls="mainNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="d-flex align-items-center justify-content-center gap-2 text-midnight fw-bold">
+                            <span class="navbar-toggler-icon"></span> Navigation Menu
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNavbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item fw-bold border-bottom pb-2" href="products.html">All Products Overview</a></li>
+                                    <li><a class="dropdown-item" href="products.html#iron">Iron Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="products.html#glass">Glass Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="products.html#brass">Brass Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="products.html#wood">Wood Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="products.html#aluminium">Aluminium Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="products.html#decorative">Decorative Handicraft</a></li>
+                                    <li><a class="dropdown-item" href="products.html#tables">Table Wares</a></li>
+                                    <li><a class="dropdown-item" href="products.html#decor">Home Decor</a></li>
+                                    <li><a class="dropdown-item" href="products.html#candles">Candle Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sitemap.html">Site Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+       MAIN CONTENT
+       ========================================================================== -->
+    <main class="container mb-5">
+        <!-- Page Title Banner -->
+        <div class="page-header-banner">
+            <h2 class="page-title">About Venus Handicrafts</h2>
+            <p class="page-lead">Preserving traditional folk craftsmanship, empowering indigenous artisans, and exporting timeless decorative heritage since 1972.</p>
+        </div>
+
+        <!-- Numbers & Key Milestones Bar -->
+        <section class="mb-5">
+            <div class="row g-3 g-md-4">
+                <div class="col-6 col-md-3">
+                    <div class="stat-counter-card">
+                        <div class="stat-number">1972</div>
+                        <div class="stat-label">Established Year</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-counter-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Years of Heritage</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-counter-card">
+                        <div class="stat-number">45+</div>
+                        <div class="stat-label">Export Destinations</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-counter-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Master Artisans</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 1: OUR STORY -->
+        <section id="our-story" class="mb-5">
+            <div class="row align-items-center g-5 content-card">
+                <div class="col-12 col-lg-5">
+                    <div class="rounded-4 overflow-hidden border border-2 border-midnight shadow-sm">
+                        <img src="images/hc.jpeg" alt="Venus Handicrafts Heritage Workshop" class="img-fluid w-100" style="min-height: 380px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <span class="badge bg-dark px-3 py-2 text-uppercase mb-2">Heritage Story</span>
+                    <h3 class="fw-bold mb-3" style="text-decoration: underline; text-underline-offset: 4px; font-size: 2rem;">Our Story</h3>
+                    <p class="text-dark mb-3" style="font-size: 1.05rem; line-height: 1.8;">
+                        Established in <strong>1972</strong>, <strong>Venus Handicrafts</strong> originated from a humble collective of passionate master artisans who recognized that ancestral crafting techniques were rapidly disappearing amidst modern mass production. With an unwavering love for traditional artistry, our founders created a dedicated sanctuary where authentic techniques could thrive without compromise.
+                    </p>
+                    <p class="text-dark mb-3" style="font-size: 1.05rem; line-height: 1.8;">
+                        Over five decades, Venus Handicrafts has evolved from a local artisanal guild into a globally renowned manufacturing and exporting enterprise. From hand-forged wrought iron and chiseled brass urns to intricately carved walnut boxes and kaleidoscopic Turkish mosaic lamps, each piece embodies the dedication of artisans who pour their heart and cultural soul into every creation.
+                    </p>
+                    <p class="text-dark mb-0" style="font-size: 1.02rem; line-height: 1.7;">
+                        Today, our creations bring genuine warmth, timeless character, and ancestral elegance to luxury homes, five-star heritage hotels, and boutique design spaces across the globe.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: OUR MISSION & OUR VISION -->
+        <section class="mb-5">
+            <div class="row g-4">
+                <!-- Our Mission -->
+                <div class="col-12 col-lg-6">
+                    <div class="mission-vision-box">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <span class="fs-2">🎯</span>
+                            <h3 class="fw-bold mb-0" style="text-decoration: underline; text-underline-offset: 4px;">Our Mission</h3>
+                        </div>
+                        <p class="text-dark mb-3" style="font-size: 1.03rem; line-height: 1.8;">
+                            Our mission is to empower indigenous craftspeople and their families by providing sustainable, ethical livelihood opportunities while safeguarding endangered handicraft techniques for future generations.
+                        </p>
+                        <ul class="text-dark mb-0 ps-3" style="line-height: 1.8;">
+                            <li>Provide fair-trade wages and respectful work environments for artisan clusters.</li>
+                            <li>Preserve ancient folk arts including brass repoussé, hand-carving, and glazed pottery.</li>
+                            <li>Bridge traditional handcrafting with modern, eco-conscious global consumer standards.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Our Vision -->
+                <div class="col-12 col-lg-6">
+                    <div class="mission-vision-box">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <span class="fs-2">🌟</span>
+                            <h3 class="fw-bold mb-0" style="text-decoration: underline; text-underline-offset: 4px;">Our Vision</h3>
+                        </div>
+                        <p class="text-dark mb-3" style="font-size: 1.03rem; line-height: 1.8;">
+                            Our vision is to be recognized worldwide as the foremost destination and trusted export authority for authentic, heritage-inspired handmade decorative handicrafts.
+                        </p>
+                        <ul class="text-dark mb-0 ps-3" style="line-height: 1.8;">
+                            <li>Elevate traditional handcrafted art to the forefront of global interior architecture.</li>
+                            <li>Foster cross-cultural appreciation for artisanal authenticity over disposable plastic goods.</li>
+                            <li>Continuously expand our global reach across every major continent with sustainable trade.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: OUR EXPERIENCE (MANUFACTURING & EXPORTING) -->
+        <section class="mb-5">
+            <div class="section-header-block">
+                <h3 class="section-main-title">Our Experience</h3>
+                <p class="section-sub-title">Over 50 years of excellence spanning artisan manufacturing, global export compliance, and worldwide trade partnerships</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- 1. Manufacturing Experience -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="experience-card">
+                        <span class="experience-icon">🔨</span>
+                        <h4 class="fw-bold mb-2">Manufacturing Experience</h4>
+                        <p class="text-dark small mb-0">
+                            Over 50 years of direct workshop production across wrought iron, heavy cast brass, seasoned hardwoods, mouth-blown glass, and glazed ceramics with strict multi-step craftsmanship audits.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. Exporting Experience -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="experience-card">
+                        <span class="experience-icon">🚢</span>
+                        <h4 class="fw-bold mb-2">Exporting Experience</h4>
+                        <p class="text-dark small mb-0">
+                            Proven international shipping track record across North America, Europe, the Middle East, and Asia. Complete mastery over customs compliance, phytosanitary certificates, and export logistics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3. Global Importers & Wholesalers -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="experience-card">
+                        <span class="experience-icon">🌐</span>
+                        <h4 class="fw-bold mb-2">Global Importers &amp; Wholesalers</h4>
+                        <p class="text-dark small mb-0">
+                            High-capacity volume production tailored for international importers and wholesale distributors with consistent quality assurance, custom branding, and reliable seasonal delivery schedules.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 4. Boutique Retailers -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="experience-card">
+                        <span class="experience-icon">🏬</span>
+                        <h4 class="fw-bold mb-2">Retailers &amp; Interior Designers</h4>
+                        <p class="text-dark small mb-0">
+                            Specialized small-batch supply and custom bespoke commissions for high-end decor retailers, boutique gift shops, architectural firms, and luxury hospitality interior decorators.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: WHY VENUS HANDICRAFTS (REPUTATION & QUALITY) -->
+        <section class="mb-5">
+            <div class="section-header-block">
+                <h3 class="section-main-title">Why Venus Handicrafts</h3>
+                <p class="section-sub-title">What sets us apart in the global handicraft and decorative art industry</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Column 1: Reputation & Heritage -->
+                <div class="col-12 col-lg-6">
+                    <div class="quality-badge-item">
+                        <div class="quality-badge-icon">🏆</div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Company Reputation Built on Trust</h5>
+                            <p class="text-dark mb-0 small">
+                                Since 1972, we have built an unblemished global reputation for honesty, punctuality, and authentic artisan provenance. When clients partner with Venus Handicrafts, they receive genuine handmade artistry backed by decades of credibility.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="quality-badge-item">
+                        <div class="quality-badge-icon">🌿</div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Ethical Sourcing &amp; Fair Trade</h5>
+                            <p class="text-dark mb-0 small">
+                                We operate on strict fair-trade principles. Our artisans receive generous compensation, healthcare support, and dignified workshops, ensuring their traditional craft remains a sustainable career for their families.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quality Commitment & Packing -->
+                <div class="col-12 col-lg-6">
+                    <div class="quality-badge-item">
+                        <div class="quality-badge-icon">⭐</div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Uncompromising Quality Commitment</h5>
+                            <p class="text-dark mb-0 small">
+                                Every single artifact undergoes rigorous 3-tier inspection—from raw material purity to structural balance and fine surface finishing. We use only seasoned timbers, corrosion-resistant brass, and lead-free non-toxic glazes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="quality-badge-item">
+                        <div class="quality-badge-icon">📦</div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Export-Grade Protective Packaging</h5>
+                            <p class="text-dark mb-0 small">
+                                Fragile glass lamps, heavy metal urns, and carved woodwork are securely packed with shock-resistant cushioning, corner guards, and moisture-proof wrap, ensuring 100% damage-free international arrival.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION 6: CALL TO ACTION -->
+        <section class="cta-banner-wrapper">
+            <h2>Ready to Experience Authentic Artisanal Heritage?</h2>
+            <p>
+                Whether you are an international importer sourcing container volumes or an interior connoisseur looking for bespoke handcrafted artifacts, we look forward to collaborating with you.
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="contact.html" class="btn btn-handicraft-primary px-4 py-3" style="font-size: 1.1rem;">Connect With Our Export Desk</a>
+                <a href="products.html" class="btn btn-light px-4 py-3 text-midnight fw-bold" style="border-radius: 50px; font-family: var(--font-heading);">Browse Product Catalog</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+       SECTION 7: COMMON FOOTER
+       ========================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Col 1: About Venus Handicrafts -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5 class="footer-brand-title">Venus Handicrafts</h5>
+                    <p class="footer-description">
+                        Dedicated to preserving traditional artisanal craftsmanship since 1972. We curate and craft unique handmade creations in iron, brass, wood, glass, and clay, bringing authentic beauty to homes worldwide.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-secondary p-2">Artisan Made</span>
+                        <span class="badge bg-secondary p-2">Authentic Heritage</span>
+                        <span class="badge bg-secondary p-2">100% Handmade</span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-heading">Main Links</h6>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Categories -->
+                <div class="col-6 col-md-3 col-lg-3">
+                    <h6 class="footer-heading">Collections</h6>
+                    <ul class="footer-links-list">
+                        <li><a href="products.html#iron">Iron Handicraft</a></li>
+                        <li><a href="products.html#brass">Brass Handicraft</a></li>
+                        <li><a href="products.html#wood">Wood Handicraft</a></li>
+                        <li><a href="products.html#glass">Glass Handicraft</a></li>
+                        <li><a href="products.html#aluminium">Aluminium Handicraft</a></li>
+                        <li><a href="products.html#decor">Home Decor & Table Wares</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & Hours -->
+                <div class="col-12 col-md-12 col-lg-3">
+                    <h6 class="footer-heading">Contact & Hours</h6>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <span><a href="mailto:ibtisamadnan16@gmail.com">ibtisamadnan16@gmail.com</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>🕒</span>
+                        <span>Monday - Friday: 9am - 5pm EST</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-bottom-divider">
+
+            <div class="footer-copyright">
+                <p class="mb-0">&copy; 1972 Venus Handicrafts. All rights reserved. Crafted with passion for heritage artistry.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS & Theme Interactions -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
