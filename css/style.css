@@ -1,21 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
-/* ==========================================================================
-   VENUS HANDICRAFTS - MAIN STYLESHEET
-   Luxury Handicraft Palette:
-   - Dark Brown : #3E2723 (Primary contrast, headers, brand titles)
-   - Brown      : #795548 (Warm earth borders, subtitles, accents)
-   - Beige      : #D7CCC8 (Cards, subtle panels, dividers)
-   - Cream      : #FFF8E1 (Main page canvas background)
-   - Gold       : #C9A227 (Artisanal luxury buttons, stars, badges, highlights)
-   - Dark Text  : #212121 (High-readability body text)
-   Typography:
-   - Headings   : Playfair Display, Georgia, serif
-   - Body       : Poppins, Montserrat, sans-serif
-   ========================================================================== */
-
 :root {
-    /* Explicit Palette Colors */
+    
     --color-dark-brown: #3E2723;
     --color-brown: #795548;
     --color-beige: #D7CCC8;
@@ -23,24 +9,23 @@
     --color-gold: #C9A227;
     --color-gold-hover: #b08d1e;
     --color-dark-text: #212121;
-    
-    /* Semantic Theme Mappings */
-    --bg-theme: #FFF8E1;               /* Luxury Cream canvas */
-    --bg-theme-light: #fdfaf0;         /* Soft Cream tint */
-    --bg-theme-card: #f6ede3;          /* Warm Beige/Cream card */
+
+    --bg-theme: #FFF8E1;               
+    --bg-theme-light: #fdfaf0;         
+    --bg-theme-card: #f6ede3;          
     --bg-theme-card-hover: #ede1d3;
     
-    --text-midnight: #3E2723;          /* Dark Brown for titles and headers */
-    --text-dark: #212121;              /* Primary text */
-    --text-muted-custom: #5d4037;      /* Warm earth secondary text */
+    --text-midnight: #3E2723;          
+    --text-dark: #212121;              
+    --text-muted-custom: #5d4037;      
     
-    --accent-orange: #C9A227;           /* Rich Gold accent */
-    --accent-orange-hover: #b08d1e;     /* Deep Gold hover */
-    --gold-accent: #C9A227;             /* Gold */
+    --accent-orange: #C9A227;           
+    --accent-orange-hover: #b08d1e;     
+    --gold-accent: #C9A227;             
     
-    --footer-bg: #3E2723;              /* Dark Brown footer */
-    --footer-text: #D7CCC8;            /* Soft Beige footer text */
-    --footer-link: #FFF8E1;            /* Cream footer links */
+    --footer-bg: #3E2723;              
+    --footer-text: #D7CCC8;            
+    --footer-link: #FFF8E1;            
     
     --border-subtle: rgba(62, 39, 35, 0.16);
     --border-card: rgba(121, 85, 72, 0.22);
@@ -49,7 +34,6 @@
     --font-body: 'Poppins', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-/* Base & Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -71,7 +55,6 @@ main {
     flex: 1 0 auto;
 }
 
-/* Typography */
 h1, h2, h3, h4, h5, h6, .brand-font {
     font-family: var(--font-heading);
     color: var(--text-midnight);
@@ -88,9 +71,6 @@ a:hover {
     color: var(--color-gold);
 }
 
-/* ==========================================================================
-   HEADER & TOP BRANDING
-   ========================================================================== */
 .top-header {
     padding: 1.5rem 0 0.5rem;
     background: linear-gradient(to bottom, rgba(215, 204, 200, 0.35) 0%, transparent 100%);
@@ -144,7 +124,6 @@ a:hover {
     margin-top: 3px;
 }
 
-/* Top Action Bar (Search & Quick Icons) */
 .top-action-bar {
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
@@ -235,9 +214,6 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* ==========================================================================
-   DECORATIVE DIAMOND DIVIDER
-   ========================================================================== */
 .hr-line-wrapper {
     margin: 0.85rem 0 1.25rem;
 }
@@ -264,9 +240,6 @@ a:hover {
     margin: 0 10px;
 }
 
-/* ==========================================================================
-   MAIN NAVIGATION
-   ========================================================================== */
 .main-navbar {
     background-color: rgba(215, 204, 200, 0.4);
     border-radius: 14px;
@@ -307,7 +280,6 @@ a:hover {
     box-shadow: 0 3px 8px rgba(62, 39, 35, 0.25);
 }
 
-/* Dropdown styling */
 .dropdown-menu {
     background-color: #FFF8E1;
     border: 2px solid var(--color-dark-brown);
@@ -337,9 +309,6 @@ a:hover {
     color: var(--color-gold);
 }
 
-/* ==========================================================================
-   PAGE HERO & COMMON SECTIONS
-   ========================================================================== */
 .page-header-banner {
     text-align: center;
     margin-bottom: 2.25rem;
@@ -363,7 +332,6 @@ a:hover {
     margin: 0 auto;
 }
 
-/* Content cards & containers */
 .content-card {
     background-color: var(--bg-theme-card);
     border: 1px solid var(--border-card);
@@ -373,7 +341,6 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
-/* Buttons */
 .btn-handicraft-primary {
     background-color: var(--color-gold);
     border: 1px solid var(--color-gold);
@@ -411,9 +378,6 @@ a:hover {
     transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
 .site-footer {
     background-color: var(--color-dark-brown);
     color: var(--color-beige);
@@ -497,16 +461,6 @@ a:hover {
     color: var(--color-beige);
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN SYSTEM (PHASE 11)
-   Breakpoints:
-   - Desktop & Large Displays : >= 1200px (col-lg-4, 3 columns)
-   - Laptops & Desktops       : 992px - 1199px
-   - Tablets & Small Laptops  : 768px - 991px (col-md-6, 2 columns)
-   - Mobile Phones            : < 768px (col-sm-12, col-12, 1 column)
-   ========================================================================== */
-
-/* Navbar Toggler (Hamburger Button) */
 .navbar-toggler {
     background-color: var(--color-dark-brown) !important;
     border: 2px solid var(--color-gold) !important;
@@ -541,7 +495,6 @@ a:hover {
     height: 1.35em;
 }
 
-/* Tablet & Mobile Hamburger Menu Transition (< 992px) */
 @media (max-width: 991.98px) {
     .main-navbar {
         padding: 0.65rem 0.85rem;
@@ -588,7 +541,6 @@ a:hover {
         margin-top: 0.25rem;
     }
 
-    /* Tablet Screen Optimizations */
     .hero-slide-img {
         height: 440px;
     }
@@ -598,7 +550,6 @@ a:hover {
     }
 }
 
-/* Mobile Devices (< 768px) */
 @media (max-width: 767.98px) {
     .brand-title {
         font-size: 1.65rem;
@@ -663,7 +614,6 @@ a:hover {
     }
 }
 
-/* Extra Small Phones (< 576px) */
 @media (max-width: 575.98px) {
     .brand-title {
         font-size: 1.45rem;
@@ -688,11 +638,6 @@ a:hover {
     }
 }
 
-/* ==========================================================================
-   PHASE 2: HOME PAGE SPECIALIZED STYLES
-   ========================================================================== */
-
-/* 1. Hero Section */
 .hero-banner-wrapper {
     position: relative;
     border-radius: 20px;
@@ -811,7 +756,6 @@ a:hover {
     box-shadow: 0 6px 15px rgba(255, 255, 255, 0.35);
 }
 
-/* 2. Section Titles */
 .section-header-block {
     text-align: center;
     margin-bottom: 2.75rem;
@@ -834,7 +778,6 @@ a:hover {
     margin: 0 auto;
 }
 
-/* 3. Featured Handicrafts Cards */
 .product-card-featured {
     background-color: var(--bg-theme-card);
     border: 1px solid var(--border-card);
@@ -891,7 +834,6 @@ a:hover {
     font-family: var(--font-heading);
 }
 
-/* 4. Category Cards */
 .category-box-card {
     background-color: var(--bg-theme-card);
     border: 1px solid var(--border-card);
@@ -951,7 +893,6 @@ a:hover {
     color: #FFF8E1;
 }
 
-/* 5. Why Choose Us Section */
 .why-card {
     background-color: var(--bg-theme-card);
     border: 1px solid var(--border-card);
@@ -997,7 +938,6 @@ a:hover {
     margin-bottom: 0;
 }
 
-/* 6. Gallery Preview */
 .gallery-preview-tile {
     position: relative;
     border-radius: 14px;
@@ -1037,7 +977,6 @@ a:hover {
     opacity: 1;
 }
 
-/* 7. Call To Action (CTA) Section */
 .cta-banner-wrapper {
     background: linear-gradient(135deg, var(--color-dark-brown) 0%, var(--color-brown) 100%);
     border-radius: 20px;
@@ -1079,10 +1018,6 @@ a:hover {
         padding: 2.5rem 1.25rem;
     }
 }
-
-/* ==========================================================================
-   PHASE 3: ABOUT US PAGE SPECIALIZED STYLES
-   ========================================================================== */
 
 .stat-counter-card {
     background-color: var(--bg-theme-card);
@@ -1184,11 +1119,6 @@ a:hover {
     box-shadow: 0 4px 10px rgba(62, 39, 35, 0.2);
 }
 
-/* ==========================================================================
-   PHASE 4: PRODUCTS & CATEGORIES SPECIALIZED STYLES
-   ========================================================================== */
-
-/* Category Showcase Card (Title, Image, Description, View Products) */
 .cat-showcase-card {
     background-color: var(--bg-theme-card);
     border: 1px solid var(--border-card);
@@ -1283,7 +1213,6 @@ a:hover {
     transform: translateY(-2px);
 }
 
-/* Category Filter Tabs / Pills */
 .category-filter-nav {
     display: flex;
     flex-wrap: wrap;
@@ -1317,7 +1246,6 @@ a:hover {
     box-shadow: 0 4px 12px rgba(62, 39, 35, 0.2);
 }
 
-/* Section divider header for detail catalogs */
 .category-detail-header {
     display: flex;
     align-items: center;
@@ -1333,10 +1261,6 @@ a:hover {
     font-size: 1.75rem;
     color: var(--color-dark-brown);
 }
-
-/* ==========================================================================
-   PHASE 5: PRODUCT DETAILS INTERACTION & MODAL STYLES
-   ========================================================================== */
 
 .product-detail-modal .modal-content {
     background-color: #FFF8E1;
@@ -1442,10 +1366,6 @@ a:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(201, 162, 39, 0.35);
 }
-
-/* ==========================================================================
-   PHASE 6: GALLERY & LIGHTBOX SPECIALIZED STYLES
-   ========================================================================== */
 
 .gallery-interactive-grid {
     display: grid;
@@ -1570,7 +1490,6 @@ a:hover {
     transform: scale(1.1);
 }
 
-/* Lightbox Modal */
 .gallery-lightbox-modal .modal-content {
     background-color: #241613;
     border: 2px solid var(--color-gold);
@@ -1630,9 +1549,6 @@ a:hover {
     border-color: var(--color-gold);
 }
 
-/* ==========================================================================
-   FAQ ACCORDION & ASSISTANCE STYLING
-   ========================================================================== */
 .faq-accordion .accordion-item {
     background-color: var(--bg-theme-card);
     border: 1px solid var(--border-card);
@@ -1718,9 +1634,6 @@ a:hover {
     border: 2px solid var(--color-gold);
 }
 
-/* ==========================================================================
-   CONTACT US PAGE STYLING
-   ========================================================================== */
 .contact-form-card {
     background-color: var(--bg-theme-card);
     border: 1px solid var(--border-card);
@@ -1806,9 +1719,6 @@ a:hover {
     border: 0;
 }
 
-/* ==========================================================================
-   SITEMAP GRAPHICAL TREE DIAGRAM
-   ========================================================================== */
 .sitemap-tree-container {
     background-color: var(--bg-theme-card);
     border: 2px solid var(--border-card);
@@ -1935,9 +1845,6 @@ a:hover {
     box-shadow: 0 8px 20px rgba(62, 39, 35, 0.25);
 }
 
-/* ==========================================================================
-   BACK TO TOP BUTTON & FORM VALIDATION STYLES (PHASE 12)
-   ========================================================================== */
 html {
     scroll-behavior: smooth;
 }

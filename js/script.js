@@ -1,10 +1,6 @@
-/**
- * VENUS HANDICRAFTS - MAIN JAVASCRIPT
- * Handles active navigation state, mobile menu closing, and UI interactions
- */
+
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Highlight Active Nav Link based on URL
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.main-navbar .nav-link');
 
@@ -21,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 2. Auto-close mobile navbar on link click
     const navbarCollapse = document.getElementById('mainNavbarNav');
     if (navbarCollapse) {
         const navItems = navbarCollapse.querySelectorAll('.nav-link:not(.dropdown-toggle), .dropdown-item');
@@ -37,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2b. Enable Products parent nav-link to navigate to products.html on click
     const productDropdownLinks = document.querySelectorAll('.main-navbar .nav-item.dropdown > a.dropdown-toggle');
     productDropdownLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -45,10 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!href || href === '#' || href === 'javascript:void(0)') return;
 
             if (window.innerWidth >= 992) {
-                // Desktop: clicking "Products" goes directly to products.html
                 window.location.href = href;
             } else {
-                // Mobile: If dropdown is already open, navigate to products.html
                 const parent = this.closest('.dropdown');
                 if (parent && parent.classList.contains('show')) {
                     window.location.href = href;
@@ -57,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Search Bar Interaction
     const searchForm = document.getElementById('siteSearchForm');
     const searchInput = document.getElementById('siteSearchInput');
 
@@ -66,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const query = searchInput.value.trim();
             if (query.length > 0) {
-                // If on products page, could trigger search, otherwise redirect to products with query
                 window.location.href = `products.html?q=${encodeURIComponent(query)}`;
             } else {
                 searchInput.focus();
@@ -74,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 4. Cart / Wishlist click feedback
     const wishlistBtn = document.querySelector('.action-wishlist');
     const cartBtn = document.querySelector('.action-cart');
 
@@ -92,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 5. Category Filter Buttons on Products Page
     const filterButtons = document.querySelectorAll('.cat-filter-btn');
     const showcaseCards = document.querySelectorAll('.category-card-item');
 
@@ -115,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Check URL for category or query filter
         const urlParams = new URLSearchParams(window.location.search);
         const catParam = urlParams.get('category');
         const searchParam = urlParams.get('q');
@@ -138,7 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 6. Professional Product Detail Modal Handler
     const productModalElement = document.getElementById('productDetailModal');
     if (productModalElement) {
         const modalInstance = new bootstrap.Modal(productModalElement);
@@ -169,7 +155,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 7. Gallery Interactive Filter & Lightbox Preview Handler (Phase 6)
     const galleryFilterBtns = document.querySelectorAll('.gallery-filter-btn');
     const galleryCards = document.querySelectorAll('.gallery-filter-item');
 
@@ -193,7 +178,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Lightbox Modal Controls
     const lightboxModalElement = document.getElementById('galleryLightboxModal');
     if (lightboxModalElement) {
         const lightboxModal = new bootstrap.Modal(lightboxModalElement);
@@ -236,7 +220,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (modalCounter) modalCounter.textContent = `${currentGalleryIndex + 1} of ${visibleGalleryCards.length}`;
         }
 
-        // Attach click to cards
         document.querySelectorAll('.gallery-grid-card').forEach(card => {
             card.addEventListener('click', () => {
                 updateVisibleCards();
@@ -262,7 +245,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // Keyboard arrows support
         document.addEventListener('keydown', (e) => {
             if (lightboxModalElement.classList.contains('show')) {
                 if (e.key === 'ArrowLeft') {
@@ -274,12 +256,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 8. Contact Form Client-Side Validation & Submission (Phase 12)
     const contactForm = document.getElementById('contactForm');
     const contactAlert = document.getElementById('contactSuccessAlert');
 
     if (contactForm) {
-        // Clear error on input
         contactForm.querySelectorAll('input, textarea').forEach(field => {
             field.addEventListener('input', () => {
                 field.classList.remove('is-invalid-custom');
@@ -311,28 +291,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 errEl.textContent = message;
             }
 
-            // Name validation
             if (nameField && nameField.value.trim().length < 2) {
                 showError(nameField, 'Please enter a valid full name (minimum 2 characters).');
             }
 
-            // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (emailField && !emailRegex.test(emailField.value.trim())) {
                 showError(emailField, 'Please enter a valid email address (e.g. name@example.com).');
             }
 
-            // Phone validation
             if (phoneField && phoneField.value.trim().replace(/\D/g, '').length < 7) {
                 showError(phoneField, 'Please enter a valid phone number with area code (minimum 7 digits).');
             }
 
-            // Subject validation
             if (subjectField && subjectField.value.trim().length < 3) {
                 showError(subjectField, 'Please enter a subject (minimum 3 characters).');
             }
 
-            // Message validation
             if (messageField && messageField.value.trim().length < 10) {
                 showError(messageField, 'Please write a message with at least 10 characters.');
             }
@@ -343,7 +318,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Valid Submission
             const userName = nameField ? nameField.value.trim() : 'Valued Customer';
             if (contactAlert) {
                 contactAlert.classList.remove('d-none');
@@ -356,7 +330,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 9. Smooth Scrolling for Internal Anchor Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
@@ -373,7 +346,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 10. Back-to-Top Floating Button (Phase 12)
     let backToTopBtn = document.getElementById('backToTopBtn');
     if (!backToTopBtn) {
         backToTopBtn = document.createElement('button');
@@ -400,6 +372,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
-
 
