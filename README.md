@@ -1,5 +1,9 @@
 # 🏺 Venus Handicrafts — Aptech 1st Semester Project
 
+<p align="center">
+  <img src="images/logo.jpg" alt="Venus Handicrafts Logo" width="260" style="border-radius: 8px;">
+</p>
+
 > **A Luxury Heritage & Export-Oriented Handicrafts Showcase Website**  
 > *Crafted for Aptech Computer Education (Shahr-e-Faisal Center) — 1st Semester Web Development Project.*
 
@@ -135,6 +139,12 @@ Handicraft 1st Semester Project/
 * **Global Exporters & Importers:** Information on serving container volumes and retail importers across Europe, North America, the Middle East, and Asia.
 * **Impact Metrics Counter:** 50+ Years Experience, 25+ Export Destinations, 10,000+ Masterpieces Created, 100% Handcrafted Integrity.
 
+<p align="center">
+  <img src="images/hc.jpeg" alt="Artisan Heritage Workshop" width="480" style="border-radius: 8px;">
+  <br>
+  <em>Artisan Workshop &amp; Heritage Crafting Foundry Operations (Established 1972)</em>
+</p>
+
 ### 3. Products Catalog (`products.html`)
 * **Interactive Category Filter Bar:** Quick pills for All, Iron, Glass, Brass, Wood, Aluminium, Decorative, Table Wares, Home Décor, Candle Accessories, Other.
 * **10 Primary Category Showcase Cards:** Highlighting each category with image, description, and direct jump button.
@@ -202,6 +212,14 @@ The website fully implements all 10 categories required by the project specifica
 | **8** | **Home Décor** | Polished metals, aged timber, ceramic glaze | Floor urns, mantelpiece accents, decorative desktop trays |
 | **9** | **Candle Accessories** | Wrought iron scrollwork, solid brass cups | Multi-arm Victorian candelabras, votive hurricane holders |
 | **10**| **Other Products** | Terracotta clay, woven jute, mixed metalware | Heritage amphoras, terracotta urns, tribal ceremonial art |
+
+### 📸 Visual Product Highlights
+
+| **Iron Handicrafts** | **Brass Handicrafts** |
+| :---: | :---: |
+| <img src="images/1-Iron Handicraft/iron handicraft-1.jpg" width="280" alt="Iron Pocket Watch" style="border-radius:6px;"><br><em>Forged Antique Iron Pocket Watch</em> | <img src="images/3-Brass Handicraft/brass handicraft-2.jpg" width="280" alt="Brass Vase" style="border-radius:6px;"><br><em>Royal Chiseled Brass Decorative Vase</em> |
+| **Wood Handicrafts** | **Glass Handicrafts** |
+| <img src="images/wood handicraft-2.jpg" width="280" alt="Carved Wood Chest" style="border-radius:6px;"><br><em>Hand-Carved Rosewood Keepsake Chest</em> | <img src="images/Glass-Handicraft.jpg" width="280" alt="Mosaic Glass Lamp" style="border-radius:6px;"><br><em>Artisan Mosaic Glass Table Lamp</em> |
 
 ---
 
